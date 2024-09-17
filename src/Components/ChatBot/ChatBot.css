@@ -36,26 +36,6 @@
 .chat-bar-close .close i {
   font-size: 30px;
 }
-.chat-bar-open .close::after {
-  position: absolute;
-  content: "";
-  top: 43px;
-  left: 37px;
-  transform: rotate(-51deg);
-  border-left: 23px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid #fff;
-}
-.chat-bar-close .close::after {
-  position: absolute;
-  content: "";
-  top: 27px;
-  left: 23px;
-  transform: rotate(-55deg);
-  border-left: 24px solid transparent;
-  border-right: 29px solid transparent;
-  border-top: 31px solid #fff;
-}
 
 .chat-window {
   width: 332px;

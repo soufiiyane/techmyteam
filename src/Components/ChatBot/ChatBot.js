@@ -189,6 +189,7 @@ const ChatBot = () => {
                 placeholder="Write a reply..."
                 value={userText}
                 onChange={(e) => setUserText(e.target.value)}
+                disabled={isWaiting} // Disable input while waiting
               />
             </div>
             <div className="send-button">
