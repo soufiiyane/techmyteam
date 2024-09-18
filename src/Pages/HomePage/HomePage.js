@@ -43,7 +43,6 @@ function HomePage() {
                 navigationOpen={navigationOpen}
                 toggleNavigation={toggleNavigation}
                 dropdown={dropdown}
-                toggleDropdown={toggleDropdown}
             />
             <HeroSection/>
             <Facts/>
@@ -51,7 +50,6 @@ function HomePage() {
             <ChatBot/>
             <Features/>
             <About/>
-            <FeatureTabs/>
             <CallToAction/>
             <Footer/>
         </div>

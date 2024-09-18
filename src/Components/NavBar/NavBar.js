@@ -71,47 +71,8 @@ function NavBar({
                     Accueil
                   </a>
                 </li>
-                <li className="group relative">
-                  <a
-                    href="#"
-                    className="hover:text-primary flex items-center justify-between gap-3"
-                  >
-                    Solutions
-                    <svg
-                      className={`fill-waterloo group-hover:fill-primary w-3 h-3 cursor-pointer ${dropdownSolutions ? "fill-primary" : ""}`}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
-                    </svg>
-                  </a>
-                  <ul className={`dropdown ${dropdownSolutions ? "flex" : "hidden"}`}>
-                    <li><a href="blog-grid.html" className="hover:text-primary">Talent</a></li>
-                    <li><a href="blog-single.html" className="hover:text-primary">Smart Teams</a></li>
-                  </ul>
-                </li>
-                <li className="group relative">
-                  <a
-                    href="#"
-                    className="hover:text-primary flex items-center justify-between gap-3"
-                  >
-                    Produits
-                    <svg
-                      className={`fill-waterloo group-hover:fill-primary w-3 h-3 cursor-pointer ${dropdownProducts ? "fill-primary" : ""}`}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
-                    </svg>
-                  </a>
-                  <ul className={`dropdown ${dropdownProducts ? "flex" : "hidden"}`}>
-                    <li><a href="blog-grid.html" className="hover:text-primary">Site Web</a></li>
-                    <li><a href="blog-single.html" className="hover:text-primary">E-Commerce</a></li>
-                    <li><a href="blog-single.html" className="hover:text-primary">Application</a></li>
-                    <li><a href="blog-single.html" className="hover:text-primary">Cloud</a></li>
-                  </ul>
+                <li>
+                  <a href="index.html#support" className="hover:text-primary">Produits</a>
                 </li>
                 <li>
                   <a href="index.html#support" className="hover:text-primary">Careers</a>
