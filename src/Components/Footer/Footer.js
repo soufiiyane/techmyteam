@@ -8,18 +8,6 @@ const Footer = () => {
                 {/* Footer Top */}
                 <div className="py-20 lg:py-25">
                     <div className="flex flex-wrap lg:justify-between gap-8 lg:gap-0">
-                        <div className="animate_top w-1/2 lg:w-1/4">
-                            <a href="index.html">
-                                <img src="./images/logo/logo-light.svg" alt="Logo" className="dark:hidden"/>
-                                <img src="./images/logo/logo-dark.svg" alt="Logo" className="hidden dark:block"/>
-                            </a>
-
-                            <p className="mt-5 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-                            <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">contact</p>
-                            <a href="#"
-                               className="text-black dark:text-white font-medium text-itemtitle">hello@solid.com</a>
-                        </div>
 
                         <div
                             className="w-full lg:w-2/3 xl:w-7/12 flex flex-col md:flex-row md:justify-between gap-8 md:gap-0">
@@ -93,7 +81,7 @@ const Footer = () => {
                     </div>
 
                     <div className="animate_top">
-                        <p>&copy; 2025 Solid. All rights reserved</p>
+                        <p>&copy; 2025 TechMyTeam. All rights reserved</p>
                     </div>
 
                     <div className="animate_top">

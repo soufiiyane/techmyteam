@@ -75,10 +75,6 @@ function NavBar({
                   <a
                     href="#"
                     className="hover:text-primary flex items-center justify-between gap-3"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      toggleDropdownSolutions();
-                    }}
                   >
                     Solutions
                     <svg
@@ -99,10 +95,6 @@ function NavBar({
                   <a
                     href="#"
                     className="hover:text-primary flex items-center justify-between gap-3"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      toggleDropdownProducts();
-                    }}
                   >
                     Produits
                     <svg
