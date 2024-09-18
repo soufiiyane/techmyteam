@@ -2,33 +2,33 @@ import React from "react";
 
 const clientsData = [
     {
-        lightImg: "./images/brand/sensio.png",
-        darkImg: "./images/brand/sensio.png",
+        lightImg: "./images/brand/sensiolabs-black.png",
+        darkImg: "./images/brand/sensiolabs-white.png",
         altText: "Client 1",
     },
     {
-        lightImg: "./images/brand/logo-gm-vert-clair.png",
-        darkImg: "./images/brand/logo-gm-vert-clair.png",
+        lightImg: "./images/brand/grand-mercredi-black.png",
+        darkImg: "./images/brand/grand-mercredi-white.png",
         altText: "Client 2",
     },
     {
-        lightImg: "./images/brand/images-removebg-preview.png",
-        darkImg: "./images/brand/images-removebg-preview.png",
+        lightImg: "./images/brand/dekuple-black.png",
+        darkImg: "./images/brand/dekuple-white.png",
         altText: "Client 3",
     },
     {
-        lightImg: "./images/brand/LOGO_LAGENTX_SQUARE_400x400.png",
-        darkImg: "./images/brand/LOGO_LAGENTX_SQUARE_400x400.png",
+        lightImg: "./images/brand/lagentx-black.png",
+        darkImg: "./images/brand/lagentx-white.png",
         altText: "Client 4",
     },
     {
-        lightImg: "./images/brand/cfc-logo-removebg-preview.png",
-        darkImg: "./images/brand/cfc-logo-removebg-preview.png",
+        lightImg: "./images/brand/cfc-black.png",
+        darkImg: "./images/brand/cfc-white.png",
         altText: "Client 5",
     },
     {
-        lightImg: "./images/brand/amazon-logo-amazon-icon-transparent-free-png.webp",
-        darkImg: "./images/brand/amazon-logo-amazon-icon-transparent-free-png.webp",
+        lightImg: "./images/brand/Amazon-Logo-Black.png",
+        darkImg: "./images/brand/Amazon-Logo-White.png",
         altText: "Client 6",
     },
 ];

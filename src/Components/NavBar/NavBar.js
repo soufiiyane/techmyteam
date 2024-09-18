@@ -24,7 +24,7 @@ function NavBar({
         <div className="mx-auto max-w-[1390px] px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
           <div className="w-full lg:w-1/4 flex items-center justify-between">
             <a href="index.html">
-              <img className="dark:hidden" src="./images/logo/logo-light.png" alt="Logo Clair"/>
+              <img className="dark:hidden" src="./images/logo/techmyteam-black.png" alt="Logo Clair"/>
               <img className="hidden dark:block" src="./images/logo/logo-light.png" alt="Logo Sombre"/>
             </a>
 
