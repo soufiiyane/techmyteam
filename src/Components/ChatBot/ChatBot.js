@@ -121,7 +121,7 @@ const ChatBot = () => {
           className="collapsible close"
           onClick={chatOpen}
         >
-          <img src="images/Sparrow-Bird.png" alt="Sparrow Bird" />
+          <img src="images/agent-chatbot.png" alt="Sparrow Bird" />
         </button>
       </div>
 
