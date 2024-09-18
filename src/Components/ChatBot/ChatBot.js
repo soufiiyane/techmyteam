@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import './ChatBot.css'; // Include your CSS in a separate file or use styled-components
+import React, { useState, useEffect, useRef } from 'react';
+import './ChatBot.css';
 
 const ChatBot = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [isConversationOpen, setIsConversationOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [userText, setUserText] = useState('');
-  const [isWaiting, setIsWaiting] = useState(false); // New state to handle the loader
+  const [isWaiting, setIsWaiting] = useState(false);
+  const hasDefaultMessage = useRef(false); // Ref to track if default message is set
 
   useEffect(() => {
-    // Event listener for Enter key press
     const handleKeyPress = (e) => {
       if (e.keyCode === 13 && document.activeElement.id === 'textInput') {
         userResponse();
@@ -26,15 +26,19 @@ const ChatBot = () => {
   const chatOpen = () => {
     setIsChatOpen(true);
     setIsConversationOpen(false);
+
+    if (!hasDefaultMessage.current) {
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { type: 'admin', text: 'Bonjour ! Je suis l\'assistant virtuel de TechMyTeam. Comment puis-je vous aider aujourd\'hui ? Je peux vous fournir des informations sur notre entreprise, nos membres d\'équipe, nos offres d\'emploi ou vous aider à planifier un rendez-vous pour discuter de l\'embauche de talents ou d\'idées de projets.' }
+      ]);
+      hasDefaultMessage.current = true;
+    }
   };
 
   const chatClose = () => {
     setIsChatOpen(false);
     setIsConversationOpen(false);
-  };
-
-  const openConversation = () => {
-    setIsConversationOpen(true);
   };
 
   const generateSessionId = () => {
@@ -63,7 +67,7 @@ const ChatBot = () => {
     ]);
     setUserText('');
 
-    setIsWaiting(true); // Show the loader
+    setIsWaiting(true);
 
     const sessionId = getSessionId();
     postData(userText, sessionId);
@@ -100,7 +104,7 @@ const ChatBot = () => {
         console.error('Network error or CORS issue');
       }
     } finally {
-      setIsWaiting(false); // Remove the loader
+      setIsWaiting(false);
     }
   };
 
@@ -125,7 +129,7 @@ const ChatBot = () => {
         </button>
       </div>
 
-      <div className="chat-bar-close" style={{display: isChatOpen ? 'block' : 'none'}}>
+      <div className="chat-bar-close" style={{ display: isChatOpen ? 'block' : 'none' }}>
         <button type="button"
                 onClick={chatClose}
                 className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -138,27 +142,10 @@ const ChatBot = () => {
       </div>
 
       {isChatOpen && !isConversationOpen && (
-        <div className="chat-window" id="chat-window1">
-          <div className="hi-there">
-            <p className="p1">Hi There</p>
-            <p className="p2">Hello, Ask Us Anything, Share Your Feedback.</p>
-          </div>
-          <div className="start-conversation">
-            <h1>Start a Conversation</h1>
-            <br/>
-            <p>The team typically replies in a few minutes.</p>
-            <button className="new-conversation" type="button" onClick={openConversation}>
-              <span>New Conversation</span>
-            </button>
-          </div>
-        </div>
-      )}
-
-      {isChatOpen && isConversationOpen && (
         <div className="chat-window2" id="chat-window2">
           <div className="hi-there">
-            <p className="p1">Hi There</p>
-            <p className="p2">Hello, Ask Us Anything, Share Your Feedback.</p>
+            <p className="p1">Bonjour !</p>
+            <p className="p2">Les réponses peuvent prendre quelques secondes. Merci de votre patience !</p>
           </div>
           <div className="message-box" id="messageBox">
             {messages.map((message, index) => (
@@ -167,7 +154,7 @@ const ChatBot = () => {
                 <p>{message.text}</p>
               </div>
             ))}
-            {isWaiting && ( // Display the loader
+            {isWaiting && (
               <div className="second-chat">
                 <div className="circle" id="circle-mar"></div>
                 <div className="loader-container">
@@ -189,12 +176,12 @@ const ChatBot = () => {
                 placeholder="Write a reply..."
                 value={userText}
                 onChange={(e) => setUserText(e.target.value)}
-                disabled={isWaiting} // Disable input while waiting
+                disabled={isWaiting}
               />
             </div>
             <div className="send-button">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} onClick={userResponse}
-                   stroke="currentColor" className="size-6" style={{cursor:'pointer'}}>
+                   stroke="currentColor" className="size-6" style={{ cursor: 'pointer' }}>
                 <path strokeLinecap="round" strokeLinejoin="round"
                       d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/>
               </svg>
