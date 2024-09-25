@@ -1,14 +1,19 @@
+import React from 'react';
+
 function NavBar({
                   isDark,
                   toggleDarkMode,
                   stickyMenu,
                   navigationOpen,
                   toggleNavigation,
-                  dropdownSolutions,
-                  toggleDropdownSolutions,
-                  dropdownProducts,
-                  toggleDropdownProducts,
                 }) {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
       <div className="fixed top-0 left-0 -z-10 flex h-full w-full items-center justify-around">
@@ -72,16 +77,24 @@ function NavBar({
                   </a>
                 </li>
                 <li>
-                  <a href="index.html#support" className="hover:text-primary">Produits</a>
+                  <a href="#" className="hover:text-primary">Produits</a>
                 </li>
                 <li>
-                  <a href="index.html#support" className="hover:text-primary">Careers</a>
+                  <a href="#" className="hover:text-primary">Careers</a>
                 </li>
                 <li>
-                  <a href="index.html#support" className="hover:text-primary">A Propos</a>
+                  <a href="#" className="hover:text-primary">A Propos</a>
                 </li>
                 <li>
-                  <a href="index.html#support" className="hover:text-primary">Contact</a>
+                  <a
+                    href="#support"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection('support');
+                    }}
+                    className="hover:text-primary">
+                    Contact
+                  </a>
                 </li>
               </ul>
             </nav>

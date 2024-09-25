@@ -8,11 +8,11 @@ import Facts from "../../Components/Facts/Facts";
 import Footer from "../../Components/Footer/Footer";
 import CallToAction from "../../Components/CallToAction/CallToAction";
 import ChatBot from "../../Components/ChatBot/ChatBot";
+import Contact from "../../Components/Contact/Contact";
 
 function HomePage() {
     const [stickyMenu, setStickyMenu] = useState(false);
     const [navigationOpen, setNavigationOpen] = useState(false);
-    const [dropdown, setDropdown] = useState(false);
     const [isDark, setIsDark] = useState(JSON.parse(localStorage.getItem("isDark")))
 
     useEffect(() => {
@@ -24,7 +24,6 @@ function HomePage() {
     }, []);
 
     const toggleNavigation = () => setNavigationOpen(!navigationOpen);
-    const toggleDropdown = () => setDropdown(!dropdown);
 
     const toggleDarkMode = () => {
         setIsDark(!isDark)
@@ -39,7 +38,6 @@ function HomePage() {
                 stickyMenu={stickyMenu}
                 navigationOpen={navigationOpen}
                 toggleNavigation={toggleNavigation}
-                dropdown={dropdown}
             />
             <HeroSection/>
             <Facts/>
@@ -47,6 +45,7 @@ function HomePage() {
             <ChatBot/>
             <Features/>
             <About/>
+            <Contact/>
             <CallToAction/>
             <Footer/>
         </div>

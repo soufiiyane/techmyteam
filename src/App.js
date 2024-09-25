@@ -2,7 +2,7 @@ import { initializeAlpine, initializeTestimonialSwiper, initializeScrollReveal }
 import React, {useEffect} from "react";
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import HomePage from "./Pages/HomePage/HomePage";
-import ContactPage from "./Pages/HomePage/ContactPage";
+import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
   return (
       <BrowserRouter>
           <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="*" element={<Navigate to="/" />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/produits" element={<ServicesPage/>} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>
   );
