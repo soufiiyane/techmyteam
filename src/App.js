@@ -2,6 +2,7 @@ import { initializeAlpine, initializeTestimonialSwiper, initializeScrollReveal }
 import React, {useEffect} from "react";
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import HomePage from "./Pages/HomePage/HomePage";
+import CareersPage from "./Pages/CareersPage/CareersPage";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 
 
@@ -17,7 +18,8 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/produits" element={<ServicesPage/>} />
+            <Route path="/carriere" element={<CareersPage/>} />
+            <Route path="/services" element={<ServicesPage/>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>

@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
+import Careers from "../../Components/Careers/Careers";
 import Banner from "../../Components/Banner/Banner";
-import Services from "../../Components/Services/Services";
-import Integrations from "../../Components/Integrations/Integrations";
-import Clients from "../../Components/Clients/Clients";
 
 function CareersPage() {
   const [stickyMenu, setStickyMenu] = useState(false);
@@ -34,8 +32,8 @@ function CareersPage() {
         navigationOpen={navigationOpen}
         toggleNavigation={toggleNavigation}
       />
-      <Integrations/>
-      <Services/>
+      <Banner/>
+      <Careers/>
       <Footer/>
     </div>
   );

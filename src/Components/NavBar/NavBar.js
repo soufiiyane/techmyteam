@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 function NavBar({
                   isDark,
@@ -70,21 +71,9 @@ function NavBar({
           >
             <nav>
               <ul className="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10">
-                <li>
-                  <a href="index.html"
-                     className={`hover:text-primary ${window.location.pathname === "/" ? "text-primary" : ""}`}>
-                    Accueil
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">Produits</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">Careers</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">A Propos</a>
-                </li>
+                <li><NavLink to="/">Accueil</NavLink></li>
+                <li><NavLink to="/services">Services</NavLink></li>
+                <li><NavLink to="/carriere">Carrière</NavLink></li>
                 <li>
                   <a
                     href="#support"
@@ -99,6 +88,7 @@ function NavBar({
               </ul>
             </nav>
           </div>
+          {/*
           <div className="flex items-center gap-6 mt-7 lg:mt-0">
             <div className={`mr-1.5 absolute lg:static top-1 right-17 visible`}>
               <label className="block m-0 relative">
@@ -113,6 +103,7 @@ function NavBar({
               </label>
             </div>
           </div>
+          */}
         </div>
       </header>
     </div>
