@@ -5,6 +5,7 @@ import Banner from "../../Components/Banner/Banner";
 import Services from "../../Components/Services/Services";
 import Integrations from "../../Components/Integrations/Integrations";
 import Clients from "../../Components/Clients/Clients";
+import FAQs from "../../Components/FAQs/FAQs";
 
 function CareersPage() {
   const [stickyMenu, setStickyMenu] = useState(false);
