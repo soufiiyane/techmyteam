@@ -7,7 +7,8 @@ const Integrations = () => {
       <div className="my-40"></div>
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <div className="animate_top text-center mx-auto">
-          <p className="text-3xl font-bold mb-12">UN APERÇU DE NOTRE EXPERTISE</p>
+          <p className="text-3xl font-bold mb-12">UN APERÇU DE NOTRE <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">EXPERTISE</span>
+            </p>
         </div>
       </div>
 

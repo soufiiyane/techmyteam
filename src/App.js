@@ -4,6 +4,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import HomePage from "./Pages/HomePage/HomePage";
 import CareersPage from "./Pages/CareersPage/CareersPage";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage";
+import CandidatureSpontaneePage from "./Pages/CandidatureSpontaneePage/CandidatureSpontaneePage";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/carriere" element={<CareersPage/>} />
             <Route path="/services" element={<ServicesPage/>} />
+            <Route path="/carriere/candidature-spontanee" element={<CandidatureSpontaneePage/>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>

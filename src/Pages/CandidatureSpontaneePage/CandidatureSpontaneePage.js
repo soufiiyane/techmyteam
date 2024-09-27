@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
-import Integrations from "../../Components/Integrations/Integrations";
-import ChooseUs from "../../Components/ChooseUs/ChooseUs";
+import CandidatureSpontanee from "../../Components/CandidatureSpontanee/CandidatureSpontanee";
 
-function ServicesPage() {
+function CandidatureSpontaneePage() {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [navigationOpen, setNavigationOpen] = useState(false);
 
@@ -24,11 +23,10 @@ function ServicesPage() {
         navigationOpen={navigationOpen}
         toggleNavigation={toggleNavigation}
       />
-      <Integrations/>
-      <ChooseUs/>
+      <CandidatureSpontanee/>
       <Footer/>
     </div>
   );
 }
 
-export default ServicesPage;
+export default CandidatureSpontaneePage;

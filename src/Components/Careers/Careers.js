@@ -2,27 +2,27 @@ import React, { useState, useMemo } from 'react';
 import { Search, MapPin, FileText, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const initialJobListings = [
-  { title: "Expert Technique JAVA/ JEE (Oujda)", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Ingenieur Concepteur Développeur JAVA Confirmé/ Senior (Oujda)", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Expert technique Front End", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Frontend" },
-  { title: "Senior Outsystems Developer", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Fullstack" },
-  { title: "Ingénieur Test Fonctionnel (Anglophone) - OUJDA", location: "Oujda", country: "Maroc", type: "CDI", expertise: "QA" },
-  { title: "Expert Technique Hybris", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Developpeur Salesforce Commerce Cloud B2C et B2B", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Fullstack" },
-  { title: "Expert Technique JAVA/ JEE (Oujda)", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Ingénieur Concepteur Développeur JAVA Confirmé/ Senior (Oujda)", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Expert technique Front End", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Frontend" },
-  { title: "Senior Outsystems Developer", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Fullstack" },
-  { title: "Ingénieur Test Fonctionnel (Anglophone) - OUJDA", location: "Oujda", country: "Maroc", type: "CDI", expertise: "QA" },
-  { title: "Expert Technique Hybris", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Développeur Salesforce Commerce Cloud B2C et B2B", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Fullstack" },
-  { title: "Expert Technique JAVA/ JEE (Oujda)", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Ingénieur Concepteur Développeur JAVA Confirmé/ Senior (Oujda)", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Expert technique Front End", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Frontend" },
-  { title: "Senior Outsystems Developer", location: "Oujda", country: "Maroc", type: "CDI", expertise: "Fullstack" },
-  { title: "Ingénieur Test Fonctionnel (Anglophone) - OUJDA", location: "Oujda", country: "Maroc", type: "CDI", expertise: "QA" },
-  { title: "Expert Technique Hybris", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Développeur Salesforce Commerce Cloud B2C et B2B", location: "Casablanca", country: "Maroc", type: "CDI", expertise: "Fullstack" }
+  { title: "Expert Technique PHP/ Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
+  { title: "Ingenieur Concepteur Développeur Pimcore Confirmé/ Senior", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
+  { title: "Expert technique Front End", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Frontend" },
+  { title: "Senior Cloud Developer", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud" },
+  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "QA" },
+  { title: "Expert Technique PHP/ Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
+  { title: "Ingenieur Concepteur Développeur Pimcore Confirmé/ Senior", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
+  { title: "Expert technique Front End", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Frontend" },
+  { title: "Senior Cloud Developer", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud" },
+  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "QA" },
+  { title: "Expert Technique PHP/ Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
+  { title: "Ingenieur Concepteur Développeur Pimcore Confirmé/ Senior", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
+  { title: "Expert technique Front End", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Frontend" },
+  { title: "Senior Cloud Developer", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud" },
+  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "QA" },
+  { title: "Expert Technique PHP/ Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
+  { title: "Ingenieur Concepteur Développeur Pimcore Confirmé/ Senior", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
+  { title: "Expert technique Front End", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Frontend" },
+  { title: "Senior Cloud Developer", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud" },
+  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "QA" },
+
 ];
 
 const ITEMS_PER_PAGE = 10;
@@ -66,7 +66,7 @@ const Careers = () => {
 
   const handleFilterChange = (filterType, value) => {
     setFilters(prev => ({ ...prev, [filterType]: value }));
-    setCurrentPage(1); // Reset to first page when filters change
+    setCurrentPage(1);
   };
 
   const handlePageChange = (newPage) => {
@@ -74,7 +74,14 @@ const Careers = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-c-1390">
+    <div className="container mx-auto px-4  max-w-c-1390">
+      <h2 className="text-sm uppercase mb-4">DÉCOUVREZ</h2>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-12">
+      <span
+        className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+        Nos Opportunités Disponibles
+      </span>
+      </h1>
       <div className="dark:bg-black bg-white rounded-lg overflow-hidden">
         <div className="p-4 md:p-6">
           <div className="flex flex-col md:flex-row gap-4 mb-6">
@@ -89,7 +96,7 @@ const Careers = () => {
                   setCurrentPage(1); // Reset to first page when search term changes
                 }}
               />
-              <Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
+              <Search className="absolute left-3 top-2.5 text-gray-400" size={20}/>
             </div>
             <select
               className="bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white"
@@ -98,7 +105,7 @@ const Careers = () => {
             >
               <option value="">Tous les pays</option>
               {uniqueOptions.countries.map(country => (
-                <option  key={country} value={country}>{country}</option>
+                <option key={country} value={country}>{country}</option>
               ))}
             </select>
             <select
@@ -139,13 +146,13 @@ const Careers = () => {
                 <div>
                   <h3 className="font-semibold">{job.title}</h3>
                   <div className="text-sm text-gray-600 flex items-center mt-1">
-                    <MapPin size={16} className="mr-1" />
+                    <MapPin size={16} className="mr-1"/>
                     {job.location}, {job.country}
-                    <FileText size={16} className="ml-4 mr-1" />
+                    <FileText size={16} className="ml-4 mr-1"/>
                     {job.type}
                   </div>
                 </div>
-                <a href="#"><ArrowRight className="text-pink-500" /></a>
+                <a href="#"><ArrowRight className="text-pink-500"/></a>
               </div>
             ))}
             {filteredJobs.length === 0 && (
@@ -162,7 +169,7 @@ const Careers = () => {
                 disabled={currentPage === 1}
                 className="p-2 rounded-md bg-gray-100 disabled:opacity-50"
               >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={20}/>
               </button>
               <span>{currentPage} / {pageCount}</span>
               <button
@@ -170,7 +177,7 @@ const Careers = () => {
                 disabled={currentPage === pageCount}
                 className="p-2 rounded-md bg-gray-100 disabled:opacity-50"
               >
-                <ChevronRight size={20} />
+                <ChevronRight size={20}/>
               </button>
             </div>
           )}

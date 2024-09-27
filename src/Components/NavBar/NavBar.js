@@ -29,12 +29,19 @@ function NavBar({
       >
         <div className="mx-auto max-w-[1390px] px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
           <div className="w-full lg:w-1/4 flex items-center justify-between">
-            <a href="index.html">
-              <img className="dark:hidden" src="./images/logo/techmyteam-black.png" alt="Logo Clair"/>
-              <img className="hidden dark:block" src="./images/logo/logo-light.png" alt="Logo Sombre"/>
-            </a>
+            <div className="flex items-center">
+              <div className="text-4xl font-bold mr-2" style={{color: '#FCDE70'}}>{'{'}</div>
+              <div>
+                <h1 className="text-3xl sm:text-3xl md:text-xl font-black">
+               <span
+              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+              Tech My Team
+              </span>
+                </h1>
+                <div className="text-sm" style={{color: '#000'}}>Skills for digital business</div>
+              </div>
+            </div>
 
-            {/* Hamburger Menu Button */}
             <button className="lg:hidden block" onClick={toggleNavigation}>
               <span className="block relative cursor-pointer w-5.5 h-5.5">
                 {/* Hamburger Lines */}
@@ -88,22 +95,6 @@ function NavBar({
               </ul>
             </nav>
           </div>
-          {/*
-          <div className="flex items-center gap-6 mt-7 lg:mt-0">
-            <div className={`mr-1.5 absolute lg:static top-1 right-17 visible`}>
-              <label className="block m-0 relative">
-                <input
-                  type="checkbox"
-                  checked={isDark}
-                  onChange={toggleDarkMode}
-                  className="sr-only peer"
-                />
-                <div
-                  className="w-10 h-5.5 rounded-full bg-[#D0D0D2] flex items-center px-[3px] cursor-pointer after:content-[''] after:w-4.5 after:h-4.5 after:bg-white dark:after:bg-[#262938] after:rounded-full after:shadow-switch after:duration-300 peer-checked:after:translate-x-4.5"></div>
-              </label>
-            </div>
-          </div>
-          */}
         </div>
       </header>
     </div>

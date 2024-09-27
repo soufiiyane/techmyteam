@@ -13,7 +13,6 @@ import Contact from "../../Components/Contact/Contact";
 function HomePage() {
     const [stickyMenu, setStickyMenu] = useState(false);
     const [navigationOpen, setNavigationOpen] = useState(false);
-    const [isDark, setIsDark] = useState(JSON.parse(localStorage.getItem("isDark")))
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,16 +24,9 @@ function HomePage() {
 
     const toggleNavigation = () => setNavigationOpen(!navigationOpen);
 
-    const toggleDarkMode = () => {
-        setIsDark(!isDark)
-        localStorage.setItem("isDark", JSON.stringify(!isDark))
-    };
-
     return (
-        <div className={`App ${isDark ? "dark bg-black" : ""}`}>
+        <div>
             <NavBar
-                isDark={isDark}
-                toggleDarkMode={toggleDarkMode}
                 stickyMenu={stickyMenu}
                 navigationOpen={navigationOpen}
                 toggleNavigation={toggleNavigation}

@@ -14,7 +14,7 @@ const Footer = () => {
                     </div>
 
                     <div className="animate_top">
-                        <p>&copy; 2025 TechMyTeam. All rights reserved</p>
+                        <p>&copy; {new Date().getFullYear()} TechMyTeam. All rights reserved</p>
                     </div>
 
                     <div className="animate_top">
