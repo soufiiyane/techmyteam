@@ -3,38 +3,118 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useSwipeable } from 'react-swipeable';
 
 const projects = [
-  { id: 1, name: 'Montfort', images: [
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/idkids.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/myfans.png'
-    ], category: 'Food & Beverage', size: 'medium', client: 'MAISON MONTFORT', techno: 'Drupal, Lift, iOS, Android, Javascript, ibeacon' },
-  { id: 2, name: 'Private Sport Shop',
+  {
+    id: 1,
+    name: 'DESTINATION COCKTAILS',
     images: [
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/tourista.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/flowersforzoe.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi3.png'
+      'images/realisations/drupal/cocktails/cocktail-1.png',
+      'images/realisations/drupal/cocktails/cocktail-2.png',
+      'images/realisations/drupal/cocktails/cocktail-3.png'
     ],
-    category: 'E-commerce', size: 'large', client: 'PRIVATE SPORT SHOP', techno: 'Drupal, React, Node.js, MongoDB' },
-  { id: 3, name: 'France Abonnements', images: [
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi2.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi3.png'
-    ], category: 'Media', size: 'small', client: 'FRANCE ABONNEMENTS', techno: 'Drupal, PHP, MySQL, jQuery' },
-  { id: 4, name: 'ID Kids', images: [
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi2.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi3.png'
-    ], category: 'Retail', size: 'small', client: 'ID KIDS', techno: 'Drupal, Vue.js, Laravel, PostgreSQL' },
-  { id: 5, name: 'My Fans', images: [
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi2.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi3.png'
-    ], category: 'Entertainment', size: 'large', client: 'MY FANS', techno: 'Drupal, Angular, Express.js, MySQL' },
-  { id: 6, name: 'Tourista', images: [
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi2.png',
-      'https://main.d22su8d5gxh9oa.amplifyapp.com/images/portfolio/grandmercredi3.png'
-    ], category: 'Travel', size: 'medium', client: 'TOURISTA', techno: 'Drupal, React Native, GraphQL, MongoDB' },
+    category: 'Food & Beverage',
+    size: 'large',
+    client: 'DESTINATION COCKTAILS',
+    techno: 'Drupal, Acquia Lift, IOS, Android, Elastic',
+    objectifs: [
+      'Digitaliser la marque et construire une stratégie dacquisition.',
+      'Déployer le positionnement accompagnateur de la marque.',
+      'Faire naviguer les consommateurs dans la gamme.',
+      'Optimiser lexpérience utilisateur sur tous les canaux digitaux.',
+      'Augmenter la visibilité en ligne et le trafic vers le site web.',
+      'Améliorer la conversion et la fidélisation des clients.'
+    ],
+    reponses: [
+      'Construction de la plateforme digitale.',
+      'Développement dun plan dacquisition multi-leviers : web native, mobile et social.',
+      'Création du plan dactivation CRM.',
+      'Innovation Drive to Store.',
+      'Mise en place dune stratégie de contenu engageante.',
+      'Optimisation SEO pour améliorer le classement dans les moteurs de recherche.',
+      'Intégration de fonctionnalités de commerce électronique.',
+      'Développement dune application mobile complémentaire.'
+    ],
+    resultats: [
+      'Augmentation de 150% du trafic organique en 6 mois',
+      'Amélioration du taux de conversion de 3% à 5.5%',
+      'Croissance de 200% des ventes en ligne sur 12 mois',
+      'Réduction de 25% du taux de rebond',
+      'Augmentation de 40% du panier moyen'
+    ],
+    temoignage: {
+      text: "L'équipe a fait un travail exceptionnel pour transformer notre présence en ligne. Leur expertise en Drupal et leur approche stratégique ont dépassé nos attentes. Nous avons vu une amélioration significative de nos performances digitales et de notre engagement client.",
+      author: "Directeur Marketing"
+    },
+    defis: [
+      {
+        title: "Intégration de systèmes existants",
+        solution: "Développement d'API personnalisées pour une intégration transparente avec les systèmes CRM et ERP existants."
+      },
+      {
+        title: "Performance du site à grande échelle",
+        solution: "Mise en place d'une architecture de mise en cache avancée et optimisation des requêtes de base de données."
+      },
+      {
+        title: "Personnalisation de l'expérience utilisateur",
+        solution: "Implémentation d'un système de recommandation basé sur l'IA pour offrir des contenus et produits personnalisés."
+      }
+    ]
+  },
+  {
+    id: 1,
+    name: 'DESTINATION COCKTAILS',
+    images: [
+      'images/realisations/drupal/cocktails/cocktail-1.png',
+      'images/realisations/drupal/cocktails/cocktail-2.png',
+      'images/realisations/drupal/cocktails/cocktail-3.png'
+    ],
+    category: 'Food & Beverage',
+    size: 'medium',
+    client: 'DESTINATION COCKTAILS',
+    techno: 'Drupal, Acquia Lift, IOS, Android, Elastic',
+    objectifs: [
+      'Digitaliser la marque et construire une stratégie dacquisition.',
+      'Déployer le positionnement accompagnateur de la marque.',
+      'Faire naviguer les consommateurs dans la gamme.',
+      'Optimiser lexpérience utilisateur sur tous les canaux digitaux.',
+      'Augmenter la visibilité en ligne et le trafic vers le site web.',
+      'Améliorer la conversion et la fidélisation des clients.'
+    ],
+    reponses: [
+      'Construction de la plateforme digitale.',
+      'Développement dun plan dacquisition multi-leviers : web native, mobile et social.',
+      'Création du plan dactivation CRM.',
+      'Innovation Drive to Store.',
+      'Mise en place dune stratégie de contenu engageante.',
+      'Optimisation SEO pour améliorer le classement dans les moteurs de recherche.',
+      'Intégration de fonctionnalités de commerce électronique.',
+      'Développement dune application mobile complémentaire.'
+    ],
+    resultats: [
+      'Augmentation de 150% du trafic organique en 6 mois',
+      'Amélioration du taux de conversion de 3% à 5.5%',
+      'Croissance de 200% des ventes en ligne sur 12 mois',
+      'Réduction de 25% du taux de rebond',
+      'Augmentation de 40% du panier moyen'
+    ],
+    temoignage: {
+      text: "L'équipe a fait un travail exceptionnel pour transformer notre présence en ligne. Leur expertise en Drupal et leur approche stratégique ont dépassé nos attentes. Nous avons vu une amélioration significative de nos performances digitales et de notre engagement client.",
+      author: "Directeur Marketing"
+    },
+    defis: [
+      {
+        title: "Intégration de systèmes existants",
+        solution: "Développement d'API personnalisées pour une intégration transparente avec les systèmes CRM et ERP existants."
+      },
+      {
+        title: "Performance du site à grande échelle",
+        solution: "Mise en place d'une architecture de mise en cache avancée et optimisation des requêtes de base de données."
+      },
+      {
+        title: "Personnalisation de l'expérience utilisateur",
+        solution: "Implémentation d'un système de recommandation basé sur l'IA pour offrir des contenus et produits personnalisés."
+      }
+    ]
+  }
 ];
 
 const ProjectCard = ({ project, onClick }) => {
@@ -86,9 +166,9 @@ const ProjectPopup = ({ project, onClose }) => {
   });
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100000] p-4">
+    <div className="fixed inset-0  bg-opacity-50 flex items-center justify-center z-[100000] p-4">
       <div className="bg-white rounded-lg shadow-xl w-full max-w-4xl mx-4 overflow-hidden flex flex-col max-h-[90vh]">
-        <div className="relative w-full h-48 md:h-64 flex-shrink-0">
+        <div className="relative w-full h-48 md:h-64  flex-shrink-0">
           <img
             src={project.images[currentImageIndex]}
             alt={`${project.name} - Image ${currentImageIndex + 1}`}
@@ -96,7 +176,7 @@ const ProjectPopup = ({ project, onClose }) => {
           />
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white hover:text-gray-200 bg-black bg-opacity-50 rounded-full p-2 z-10"
+            className="absolute top-4 right-4 text-white  bg-black bg-opacity-50 rounded-full p-2 z-10"
           >
             <X size={24}/>
           </button>
@@ -123,81 +203,87 @@ const ProjectPopup = ({ project, onClose }) => {
             ))}
           </div>
         </div>
-        <div className="overflow-y-auto flex-grow">
-          <div className="flex flex-col md:flex-row bg-gray-100 p-4 rounded-lg">
-            <div className="w-full md:w-1/2 p-4">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-black">Objectif :</h2>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-blue-600">TRANSFORMATION DIGITALE</h3>
-              <ul className="list-disc pl-5 space-y-2 text-black">
-                <li>Digitaliser la marque et construire une stratégie d'acquisition.</li>
-                <li>Déployer le positionnement accompagnateur de la marque.</li>
-                <li>Faire naviguer les consommateurs dans la gamme.</li>
-                <li>Optimiser l'expérience utilisateur sur tous les canaux digitaux.</li>
-                <li>Augmenter la visibilité en ligne et le trafic vers le site web.</li>
-                <li>Améliorer la conversion et la fidélisation des clients.</li>
-              </ul>
-            </div>
-            <div className="w-full md:w-1/2 p-4 bg-gray-800 rounded-lg mt-4 md:mt-0">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-white">Réponse :</h2>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-blue-400">DRIVE TO STORE</h3>
-              <ul className="list-disc pl-5 space-y-2 text-white">
-              <li>Construction de la plateforme digitale.</li>
-                <li>Développement d'un plan d'acquisition multi-leviers : web native, mobile et social.</li>
-                <li>Création du plan d'activation CRM.</li>
-                <li>Innovation Drive to Store.</li>
-                <li>Mise en place d'une stratégie de contenu engageante.</li>
-                <li>Optimisation SEO pour améliorer le classement dans les moteurs de recherche.</li>
-                <li>Intégration de fonctionnalités de commerce électronique.</li>
-                <li>Développement d'une application mobile complémentaire.</li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-full mt-4 flex flex-col md:flex-row justify-between bg-gray-100 p-4 rounded-lg">
-            <div className="md:w-1/2 p-4">
-              <h2 className="text-lg md:text-xl font-bold mb-2 text-black">CLIENT</h2>
-              <p className="text-black">{project.client}</p>
-              <h2 className="text-lg md:text-xl font-bold mt-4 mb-2 text-black">CATÉGORIE</h2>
-              <p className="text-black">{project.category}</p>
-            </div>
-            <div className="md:w-1/2 p-4">
-              <h2 className="text-lg md:text-xl font-bold mb-2 text-black">TECHNO</h2>
-              <p className="text-black">{project.techno}</p>
-            </div>
-          </div>
-          <div className="w-full mt-4 bg-gray-100 p-4 rounded-lg">
-            <h2 className="text-lg md:text-xl font-bold mb-4 text-black">RÉSULTATS DU PROJET</h2>
+        <div className="overflow-y-auto flex-grow ">
+          <div className="flex flex-col md:flex-row  p-4 rounded-lg ">
+            <div className="w-full md:w-1/2 p-4 z-[1000000000]">
+                <h2 className="text-sm mb-4">Les</h2>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-12">
+                <span
+                  className="inline-block uppercase relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+                  Objectif
+                </span>
+                </h1>
             <ul className="list-disc pl-5 space-y-2 text-black">
-              <li>Augmentation de 150% du trafic organique en 6 mois</li>
-              <li>Amélioration du taux de conversion de 3% à 5.5%</li>
-              <li>Croissance de 200% des ventes en ligne sur 12 mois</li>
-              <li>Réduction de 25% du taux de rebond</li>
-              <li>Augmentation de 40% du panier moyen</li>
+              {project.objectifs.map((objectif, index) => (
+                <li key={index}>{objectif}</li>
+              ))}
             </ul>
+          </div>
+          <div className="w-full md:w-1/2 p-4 z-[1000000000] bg-gray-800 rounded-lg mt-4 md:mt-0">
+            <h2 className="text-sm mb-4">Les</h2>
+            <h1 className="text-4xl uppercase sm:text-5xl md:text-6xl font-black mb-12">
+                <span
+                  className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+                  Réponse
+                </span>
+            </h1>
+            <ul className="list-disc pl-5 space-y-2  text-black">
+                {project.reponses.map((reponse, index) => (
+                  <li key={index}>{reponse}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="w-full mt-4 z-[1000000000]  flex flex-col md:flex-row justify-between bg-gray-100 p-4 rounded-lg">
+            <div className="md:w-1/2 p-4 z-[1000000000] ">
+              <h1 className="text-2xl sm:text-2xl md:text-3xl font-black mb-5">
+                <span
+                  className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+                  CLIENT
+                </span>
+              </h1>
+              <p className="text-black font-bold mb-5">{project.client}</p>
+              <h1 className="text-2xl sm:text-2xl md:text-3xl font-black mb-5">
+                <span
+                  className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+                  CATÉGORIE
+                </span>
+              </h1>
+              <p className="text-black font-bold ">{project.category}</p>
+            </div>
+            <div className="md:w-1/2 p-4 z-[1000000000]">
+              <h1 className="text-2xl sm:text-2xl md:text-3xl font-black mb-5">
+                <span
+                  className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+                  TECHNO
+                </span>
+              </h1>
+              <p className="text-black font-bold ">{project.techno}</p>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row  p-4 rounded-lg ">
+          <div className="w-full  p-4 z-[1000000000]">
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black mb-5">
+                <span
+                  className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+                                    RÉSULTATS DU PROJET
+                </span>
+            </h1>
+            <ul className="list-disc pl-5 space-y-2 text-black">
+              {project.resultats.map((resultat, index) => (
+                <li key={index}>{resultat}</li>
+              ))}
+            </ul>
+          </div>
           </div>
           <div className="w-full mt-4 bg-gray-800 text-white p-4 rounded-lg">
             <h2 className="text-lg md:text-xl font-bold mb-4">TÉMOIGNAGE CLIENT</h2>
             <blockquote className="italic">
-              "L'équipe a fait un travail exceptionnel pour transformer notre présence en ligne. Leur expertise en Drupal et leur approche stratégique ont dépassé nos attentes. Nous avons vu une amélioration significative de nos performances digitales et de notre engagement client."
+              "{project.temoignage.text}"
             </blockquote>
-            <p className="mt-2">- Directeur Marketing, {project.client}</p>
+            <p className="mt-2">- {project.temoignage.author}, {project.client}</p>
           </div>
-          <div className="w-full mt-4 bg-gray-100 p-4 rounded-lg">
-            <h2 className="text-lg md:text-xl font-bold mb-4 text-black">DÉFIS ET SOLUTIONS</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-bold text-blue-600">Défi 1: Intégration de systèmes existants</h3>
-                <p>Solution: Développement d'API personnalisées pour une intégration transparente avec les systèmes CRM et ERP existants.</p>
-              </div>
-              <div>
-                <h3 className="font-bold text-blue-600">Défi 2: Performance du site à grande échelle</h3>
-                <p>Solution: Mise en place d'une architecture de mise en cache avancée et optimisation des requêtes de base de données.</p>
-              </div>
-              <div>
-                <h3 className="font-bold text-blue-600">Défi 3: Personnalisation de l'expérience utilisateur</h3>
-                <p>Solution: Implémentation d'un système de recommandation basé sur l'IA pour offrir des contenus et produits personnalisés.</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -221,13 +307,15 @@ const DrupalRealisations = () => {
         <div className="flex-1 pr-8 mb-8 md:mb-0">
           <h2 className="text-sm uppercase mb-4">Un Aperçu de Nos</h2>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-12">
-            <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+            <span
+              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
               Drupal Réalisations
             </span>
           </h1>
           <p className="text-gray-600 mb-4 w-full">
             Notre équipe Drupal est composée de membres qui détiennent
-            <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+            <span
+              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
               certifications professionnelles en Drupal.
             </span>
           </p>
