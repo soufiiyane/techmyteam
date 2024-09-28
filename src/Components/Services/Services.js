@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import {NavLink} from "react-router-dom";
 
-const ServiceItem = ({ text, options }) => {
+const ServiceItem = ({ text, options, paths }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,7 +30,7 @@ const ServiceItem = ({ text, options }) => {
         <div className="mt-2 ml-8 space-y-2">
           {options.map((option, index) => (
             <div key={index} className="text-xl font-light text-gray-600 hover:text-pink-500 cursor-pointer">
-              {option}
+              <NavLink to={paths[index]}>{option}</NavLink>
             </div>
           ))}
         </div>
@@ -42,21 +43,26 @@ const Services = () => {
   const services = [
     {
       name: "e-Commerce",
-      options: ["PrestaShop Solutions", "WordPress Solutions", "Shopify Solutions"]
+      options: ["Drupal Solutions", "PrestaShop Solutions", "WordPress Solutions"],
+      paths: ["/drupal-realisations", "/prestashop", "/wordpress"],
     },
     {
       name: "Experience platforms",
-      options: ["Web Development", "Mobile App Development", "UI/UX Design"]
+      options: ["Web Development", "Mobile App Development", "UI/UX Design"],
+      paths: ["/web-development", "/mobile-app-development", "/ui-ux-design"],
     },
     {
       name: "Technology & Transformation",
-      options: ["Cloud Solutions", "Legacy System Modernization", "Digital Transformation Consulting"]
+      options: ["Cloud Solutions", "Legacy System Modernization", "Digital Transformation Consulting"],
+      paths: ["/cloud-solutions", "/legacy-modernization", "/digital-transformation"],
     },
     {
       name: "Digital Marketing & Design",
-      options: ["SEO Services", "Social Media Marketing", "Content Creation"]
-    }
+      options: ["SEO Services", "Social Media Marketing", "Content Creation"],
+      paths: ["/seo", "/social-media-marketing", "/content-creation"],
+    },
   ];
+
 
   return (
     <div className="bg-gray-100 container mx-auto px-4 py-12 mx-auto max-w-c-1390">
@@ -66,7 +72,7 @@ const Services = () => {
       </h1>
       <div className="space-y-4">
         {services.map((service, index) => (
-          <ServiceItem key={index} text={service.name} options={service.options}/>
+          <ServiceItem key={index} text={service.name} options={service.options} paths={service.paths} />
         ))}
       </div>
       <div className="my-10"></div>

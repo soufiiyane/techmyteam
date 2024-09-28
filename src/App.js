@@ -5,6 +5,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import CareersPage from "./Pages/CareersPage/CareersPage";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 import CandidatureSpontaneePage from "./Pages/CandidatureSpontaneePage/CandidatureSpontaneePage";
+import DrupalRealisationsPage from "./Pages/RealisationsPage/DrupalRealisationsPage";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/carriere" element={<CareersPage/>} />
             <Route path="/services" element={<ServicesPage/>} />
             <Route path="/carriere/candidature-spontanee" element={<CandidatureSpontaneePage/>} />
+            <Route path="/drupal-realisations" element={<DrupalRealisationsPage/>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>

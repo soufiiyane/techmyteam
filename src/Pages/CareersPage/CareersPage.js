@@ -2,8 +2,7 @@ import React, {useEffect, useState} from 'react';
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import Careers from "../../Components/Careers/Careers";
-import Banner from "../../Components/Banner/Banner";
-import CandidatureSpontaneeBanner from "../../Components/Banner/CandidatureSpontaneeBanner";
+import CTA from "../../Components/CTA/CTA";
 
 function CareersPage() {
   const [stickyMenu, setStickyMenu] = useState(false);
@@ -20,13 +19,13 @@ function CareersPage() {
   const toggleNavigation = () => setNavigationOpen(!navigationOpen);
 
   return (
-    <div>
+    <div >
       <NavBar
         stickyMenu={stickyMenu}
         navigationOpen={navigationOpen}
         toggleNavigation={toggleNavigation}
       />
-      <div className="w-full mx-auto px-4 max-w-c-1390 py-16 my-10">
+      <div className="w-full mx-auto px-4 max-w-c-1390 mt-35 ">
         <div className="mt-16">
           <h2 className="text-sm uppercase mb-4">POURQUOI</h2>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-12">
@@ -71,7 +70,12 @@ function CareersPage() {
         </div>
       </div>
       <Careers/>
-      <CandidatureSpontaneeBanner/>
+      <CTA
+        linkTo="/carriere/candidature-spontanee"
+        linkText="Candidature spontanée"
+        title="Vous n'avez pas trouvé d'opportunité correspondante ?"
+        description="Ne vous inquiétez pas ! Si aucune de nos offres ne correspond à votre profil, nous vous invitons à nous envoyer une Candidature spontanée."
+      />
       <Footer/>
     </div>
   );

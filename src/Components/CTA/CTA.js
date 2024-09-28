@@ -1,7 +1,7 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const CandidatureSpontaneeBanner = () => {
+const CTA = ({ linkTo, linkText, title, description }) => {
   return (
     <section className="py-20 lg:py-25 xl:py-30 px-4 md:px-8 2xl:px-0 overflow-hidden">
       <div
@@ -10,17 +10,19 @@ const CandidatureSpontaneeBanner = () => {
         <div className="flex flex-wrap md:flex-nowrap md:items-center md:justify-between gap-8 md:gap-0">
           <div className="animate_left md:w-[60%] lg:w-1/2">
             <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle4 font-bold mb-4 w-11/12">
-              Vous n'avez pas trouvé d'opportunité correspondante ?
+              {title}
             </h2>
             <p className="mb-4 md:mb-0">
-              Ne vous inquiétez pas ! Si aucune de nos offres ne correspond à votre profil, nous vous invitons à nous
-              envoyer
-              une <strong>Candidature spontanée</strong>. Nous sommes toujours à la recherche de nouveaux talents pour
-              rejoindre notre équipe.
+              {description}
             </p>
           </div>
           <div className="animate_right lg:w-[40%] flex justify-end">
-              <NavLink to="/carriere/candidature-spontanee" className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6 hover:bg-opacity-90 transition-all duration-300">Candidature Spontanée</NavLink>
+            <NavLink
+              to={linkTo}
+              className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6 hover:bg-opacity-90 transition-all duration-300"
+            >
+              {linkText}
+            </NavLink>
           </div>
         </div>
       </div>
@@ -28,4 +30,4 @@ const CandidatureSpontaneeBanner = () => {
   );
 };
 
-export default CandidatureSpontaneeBanner;
+export default CTA;
