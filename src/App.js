@@ -7,6 +7,7 @@ import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 import CandidatureSpontaneePage from "./Pages/CandidatureSpontaneePage/CandidatureSpontaneePage";
 import DrupalRealisationsPage from "./Pages/RealisationsPage/DrupalRealisationsPage";
 import SymfonyRealisationsPage from "./Pages/RealisationsPage/SymfonyRealisationsPage";
+import PimcoreRealisationsPage from "./Pages/RealisationsPage/PimcoreRealisationsPage";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/carriere/candidature-spontanee" element={<CandidatureSpontaneePage/>} />
             <Route path="/drupal-realisations" element={<DrupalRealisationsPage/>} />
             <Route path="/symfony-realisations" element={<SymfonyRealisationsPage/>} />
+            <Route path="/pimcore-realisations" element={<PimcoreRealisationsPage/>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>

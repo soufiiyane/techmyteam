@@ -3,7 +3,7 @@ import Services from "../Services/Services";
 
 const ChooseUs = () => {
   return (
-    <div className="container mx-auto px-4 py-12 max-w-c-1390">
+    <div className="container mx-auto px-4 mt-2 max-w-c-1390 mb-10">
       <h2 className="text-sm uppercase mb-4">POURQUOI</h2>
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-12">
         <span
@@ -11,10 +11,10 @@ const ChooseUs = () => {
       </h1>
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="lg:w-1/2">
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 mb-4 text-justify">
             Nous sommes fiers de notre équipe de professionnels hautement qualifiés. Plus de 99% de notre personnel est composé d'ingénieurs diplômés des meilleures écoles d'ingénieurs. De plus, 70% de nos développeurs détiennent des certifications professionnelles dans leurs domaines respectifs, notamment Symfony, Drupal, les technologies cloud, et Kubernetes.
           </p>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 text-justify">
             Nos solides partenariats avec des leaders de l'industrie tels que Dekuple et SensioLabs nous permettent de rester à la pointe de l'innovation et d'offrir des solutions de premier ordre à nos clients.
           </p>
           <Services />
