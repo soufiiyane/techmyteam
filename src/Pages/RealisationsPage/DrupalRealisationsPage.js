@@ -24,34 +24,35 @@ function DrupalRealisationsPage() {
     {
       question: "Quels services Drupal proposez-vous ?",
       answer:
-        "Nous offrons des services de développement, de maintenance et de migration de sites Drupal, ainsi que des formations pour les utilisateurs et les développeurs.",
+        "Nous offrons des services de developpement, de maintenance et de migration de sites Drupal, ainsi que des formations pour les utilisateurs et les developpeurs.",
     },
     {
-      question: "Votre équipe est-elle certifiée en Drupal ?",
+      question: "Votre equipe est-elle certifiee en Drupal ?",
       answer:
-        "Oui, notre équipe possède plusieurs certifications Drupal, assurant un niveau d'expertise élevé dans la gestion et le développement de projets Drupal.",
+        "Oui, notre equipe possede plusieurs certifications Drupal, assurant un niveau d'expertise eleve dans la gestion et le developpement de projets Drupal.",
     },
     {
       question: "Combien de temps faut-il pour finaliser un projet Drupal ?",
       answer:
-        "Le délai de réalisation d'un projet Drupal varie en fonction de sa complexité. En général, les petits projets peuvent être terminés en 4 à 8 semaines, tandis que les projets plus complexes peuvent prendre plusieurs mois.",
+        "Le delai de realisation d'un projet Drupal varie en fonction de sa complexite. En general, les petits projets peuvent etre termines en 4 à 8 semaines, tandis que les projets plus complexes peuvent prendre plusieurs mois.",
     },
     {
-      question: "Proposez-vous un support après la livraison du projet ?",
+      question: "Proposez-vous un support apres la livraison du projet ?",
       answer:
-        "Oui, nous offrons un support technique continu et des services de maintenance après la livraison, garantissant ainsi le bon fonctionnement de votre site Drupal.",
+        "Oui, nous offrons un support technique continu et des services de maintenance apres la livraison, garantissant ainsi le bon fonctionnement de votre site Drupal.",
     },
     {
-      question: "Quelles sont vos expertises en matière de Drupal ?",
+      question: "Quelles sont vos expertises en matiere de Drupal ?",
       answer:
-        "Notre expertise inclut le développement de modules personnalisés, l'optimisation des performances, la sécurité des sites, et l'intégration de solutions tierces.",
+        "Notre expertise inclut le developpement de modules personnalises, l'optimisation des performances, la securite des sites, et l'integration de solutions tierces.",
     },
     {
       question: "Est-il possible de migrer un site vers Drupal ?",
       answer:
-        "Oui, nous proposons des services de migration vers Drupal depuis d'autres systèmes de gestion de contenu, assurant une transition fluide et sécurisée.",
+        "Oui, nous proposons des services de migration vers Drupal depuis d'autres systemes de gestion de contenu, assurant une transition fluide et securisee.",
     },
   ];
+
   return (
     <div>
       <NavBar

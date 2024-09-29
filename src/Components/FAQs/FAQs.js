@@ -22,7 +22,7 @@ const FAQs = ({ faqs }) => {
   const [openIndex, setOpenIndex] = useState(-1); // Start with no FAQ open
 
   return (
-    <div className="w-full mx-auto px-4 max-w-c-1390 mt-20 my-10">
+    <div className="w-full mx-auto px-4 max-w-c-1390 mt-20">
       <div className="flex flex-col md:flex-row justify-between items-start gap-8">
         <div className="md:w-1/3">
           <h2 className="text-sm uppercase mb-4">NOS FAQS</h2>

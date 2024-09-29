@@ -42,24 +42,24 @@ const ServiceItem = ({ text, options, paths }) => {
 const Services = () => {
   const services = [
     {
-      name: "e-Commerce",
+      name: "Développements spécifiques",
+      options: ["Symfony", "PimCore"],
+      paths: ["/symfony-realisations", "/pimcore-realisations"],
+    },
+    {
+      name: "CMS et e-Commerce",
       options: ["Drupal Solutions", "PrestaShop Solutions", "WordPress Solutions"],
-      paths: ["/drupal-realisations", "/prestashop", "/wordpress"],
+      paths: ["/drupal-realisations", "/prestashop-realisations", "/wordpress-realisations"],
     },
     {
-      name: "Experience platforms",
-      options: ["Web Development", "Mobile App Development", "UI/UX Design"],
-      paths: ["/web-development", "/mobile-app-development", "/ui-ux-design"],
+      name: "Solutions mobiles",
+      options: ["Android", "IOS"],
+      paths: ["/android-realisations", "/ios-realisations"],
     },
     {
-      name: "Technology & Transformation",
-      options: ["Cloud Solutions", "Legacy System Modernization", "Digital Transformation Consulting"],
-      paths: ["/cloud-solutions", "/legacy-modernization", "/digital-transformation"],
-    },
-    {
-      name: "Digital Marketing & Design",
-      options: ["SEO Services", "Social Media Marketing", "Content Creation"],
-      paths: ["/seo", "/social-media-marketing", "/content-creation"],
+      name: "Integration",
+      options: ["Mailing", "Web responsive"],
+      paths: ["/seo", "/social-media-marketing"],
     },
   ];
 

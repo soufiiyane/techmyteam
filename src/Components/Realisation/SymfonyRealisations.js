@@ -5,146 +5,132 @@ import { useSwipeable } from 'react-swipeable';
 const projects = [
   {
     "id": 1,
-    "name": "DESTINATION COCKTAILS",
+    "name": "MYM",
     "images": [
-      "images/realisations/drupal/cocktails/cocktails-1.png",
-      "images/realisations/drupal/cocktails/cocktails-2.png",
-      "images/realisations/drupal/cocktails/cocktails-3.png"
+      "images/realisations/symfony/mym/mym-1.png",
+      "images/realisations/symfony/mym/mym-2.png",
+      "images/realisations/symfony/mym/mym-3.png"
     ],
-    "category": "Food & Beverage",
-    "size": "large",
-    "client": "DESTINATION COCKTAILS",
-    "techno": "Drupal, Acquia Lift, IOS, Android, Elastic",
+    "category": "Social Networking",
+    "size": "medium",
+    "client": "MYM",
+    "techno": "Symfony 5.4, PHP 8.1, ApiPlatform 2.6, PostgreSQL, Mercure, Amazon SQS messenger, AWS S3...",
     "objectifs": [
-      "Digitaliser la marque et construire une stratégie d'acquisition.",
-      "Déployer le positionnement accompagnateur de la marque.",
-      "Faire naviguer les consommateurs dans la gamme.",
-      "Optimiser l'expérience utilisateur sur tous les canaux digitaux.",
-      "Augmenter la visibilité en ligne et le trafic vers le site web.",
-      "Améliorer la conversion et la fidélisation des clients."
+      "Digitaliser la plateforme pour une interaction créateur-fan unique.",
+      "Construire une stratégie de contenu engageant et personnalisé.",
+      "Optimiser l'expérience utilisateur pour maximiser l'engagement.",
+      "Accroître la visibilité des créateurs et de leurs contenus exclusifs.",
+      "Faciliter l'acquisition de nouveaux fans et l'augmentation de l'interaction."
     ],
     "reponses": [
-      "Construction de la plateforme digitale.",
-      "Développement d'un plan d'acquisition multi-leviers : web native, mobile et social.",
-      "Création du plan d'activation CRM.",
-      "Innovation Drive to Store.",
-      "Mise en place d'une stratégie de contenu engageante.",
-      "Optimisation SEO pour améliorer le classement dans les moteurs de recherche.",
-      "Intégration de fonctionnalités de commerce électronique.",
-      "Développement d'une application mobile complémentaire."
+      "Développement de la plateforme sociale pour les créateurs et fans.",
+      "Mise en place d'une stratégie de contenu adaptée aux utilisateurs.",
+      "Intégration de fonctionnalités de monétisation pour les créateurs.",
+      "Optimisation des performances pour un accès rapide et fluide.",
+      "Amélioration des outils de communication entre créateurs et fans."
     ],
     "resultats": [
-      "Augmentation de 150% du trafic organique en 6 mois.",
-      "Amélioration du taux de conversion de 3% à 5.5%.",
-      "Croissance de 200% des ventes en ligne sur 12 mois.",
-      "Réduction de 25% du taux de rebond.",
-      "Augmentation de 40% du panier moyen."
+      "Augmentation significative de l'engagement des utilisateurs.",
+      "Croissance du nombre de créateurs et de fans sur la plateforme.",
+      "Amélioration des taux de conversion pour les contenus payants.",
+      "Renforcement de la communauté autour des créateurs."
     ]
   },
   {
     id: 1,
-    name: 'PRÉVOIR',
+    name: 'Touristra Vacances',
     images: [
-      'images/realisations/drupal/prevoir/prevoir-1.png',
-      'images/realisations/drupal/prevoir/prevoir-2.png',
-      'images/realisations/drupal/prevoir/prevoir-3.png'
+      'images/realisations/symfony/touristra/touristra-1.png',
+      'images/realisations/symfony/touristra/touristra-2.png',
+      'images/realisations/symfony/touristra/touristra-3.png'
     ],
-    category: 'Insurance',
-    size: 'small',
-    client: 'PRÉVOIR',
-    techno: 'Drupal, Acquia Lift, Elastic',
-    objectifs: [
-      'Lead a full-scale digital transformation for PRÉVOIR, a prominent insurance group.',
-      'Rebuild the digital ecosystem to enhance multichannel commercial conversion.',
-      'Improve customer relations and satisfaction through personalized user experiences.',
-      'Drive qualified traffic to the website and increase user engagement.'
-    ],
-    reponses: [
-      'Development of a fully integrated digital platform for PRÉVOIR.',
-      'Design and deployment of a multichannel acquisition strategy (web, mobile, social).',
-      'Creation of an engaging CRM activation plan.',
-      'Implementation of an innovative Drive-to-Store strategy.',
-      'SEO optimization to boost organic search rankings.',
-      'Integration of e-commerce features and development of a complementary mobile app.'
-    ],
-    resultats: [
-      '150% increase in organic traffic within 6 months.',
-      'Improved conversion rate from 3% to 5.5%.',
-      '200% growth in online sales over 12 months.',
-      '25% reduction in bounce rate.',
-      '40% increase in average basket size.'
-    ]
-  },
-  {
-    id: 1,
-    name: 'DEPAZ',
-    images: [
-      'images/realisations/drupal/depaz/depaz-1.png',
-      'images/realisations/drupal/depaz/depaz-2.png',
-      'images/realisations/drupal/depaz/depaz-3.png'
-    ],
-    category: 'Beverages',
-    size: 'small',
-    client: 'DEPAZ',
-    techno: 'PHP,Drupal, JavaScript',
-    objectifs: [
-      'Lead the digital transformation of Depaz.',
-      'Establish and expand the brand’s digital presence on an international scale.',
-      'Strengthen the brand’s high-end, expert positioning in the market.',
-      'Drive qualified traffic to the website.'
-    ],
-    reponses: [
-      'Development of a comprehensive full-service platform.',
-      'Creation of an intuitive, engaging, and immersive digital experience.',
-      'Client-focused platform, contextualized to enhance user interaction.',
-      'Highlighting the brand’s heritage and story.'
-    ],
-    resultats: [
-      '150% increase in organic traffic within 6 months.',
-      'Improved conversion rate from 3% to 5.5%.',
-      '200% growth in online sales over 12 months.',
-      '25% reduction in bounce rate.',
-      '40% increase in average basket size.'
-    ]
-  },
-  {
-    id: 1,
-    name: 'MAISON MONTFORT',
-    images: [
-      'images/realisations/drupal/montfort/montfort-1.png',
-      'images/realisations/drupal/montfort/montfort-2.png',
-      'images/realisations/drupal/montfort/montfort-3.png'
-    ],
-    category: 'Food & Beverage',
+    category: 'Travel',
     size: 'medium',
-    client: 'MAISON MONTFORT',
-    techno: 'Drupal, Lift, IOS, Android, Javascript, Ibeacon',
+    client: 'Touristra Vacances',
+    techno: 'Symfony 4.4, PHP 7.1, Symfony 3.4, FOSRestBundle, MySQL, PostgreSQL, OpenApi, Expo push notifications...',
     objectifs: [
-      'Transformation Digitale.',
-      'Digitaliser la marque et construire une stratégie d’acquisition.',
-      'Déployer le positionnement accompagnateur de la marque.',
-      'Faire naviguer les consommateurs dans la gamme.',
-      'Augmenter la visibilité en ligne et le trafic vers le site web.',
-      'Améliorer la conversion et la fidélisation des clients.'
+      '[OEA] Création de Back Office multi site',
+      '[OEA] Gestion et génération des documents',
+      '[AMFE] Création de Back Office et API',
+      '[Touristra] Ajout de fonctionnalités manquantes'
     ],
     reponses: [
-      'Construction de la plateforme digitale.',
-      'Développement d\'un plan d’acquisition multi-leviers : web native, mobile et social.',
-      'Création du plan d’activation CRM.',
-      'Innovation Drive to Store.',
-      'Mise en place d\'une stratégie de contenu engageante.',
-      'Optimisation SEO pour améliorer le classement dans les moteurs de recherche.',
-      'Intégration de fonctionnalités de commerce électronique.',
-      'Développement d’une application mobile complémentaire.'
+      'Développement d’un Back Office multi-site permettant la gestion centralisée de plusieurs villages de vacances.',
+      'Mise en place d’un système de génération automatique de documents pour simplifier les processus administratifs.',
+      'Création d’API pour faciliter l’intégration avec d’autres systèmes de gestion.',
+      'Ajout de fonctionnalités manquantes pour améliorer l’expérience utilisateur sur le site web.'
     ],
     resultats: [
-      'Augmentation de 150% du trafic organique en 6 mois.',
-      'Amélioration du taux de conversion de 3% à 5.5%.',
-      'Croissance de 200% des ventes en ligne sur 12 mois.',
-      'Réduction de 25% du taux de rebond.',
-      'Augmentation de 40% du panier moyen.'
+      'Réduction de 30% du temps de gestion administrative grâce à l’automatisation des documents.',
+      'Amélioration de la satisfaction client de 20% après l’ajout de nouvelles fonctionnalités.',
+      'Augmentation de 40% du nombre de réservations en ligne dans les six mois suivant le lancement.',
+      'Réduction des coûts opérationnels de 25% grâce à une gestion centralisée et efficace.'
+    ]
+  },
+  {
+    id: 1,
+    name: 'Largus',
+    images: [
+      'images/realisations/symfony/largus/largus-1.png',
+      'images/realisations/symfony/largus/largus-2.png'
+    ],
+    category: 'Automotive',
+    size: 'medium',
+    client: 'Largus',
+    techno: 'PHP, Symfony, MySQL, Docker, JavaScript',
+    objectifs: [
+      'Migration from Symfony 2.5 to Symfony 3.4 to enhance application performance and security.',
+      'Maintenance and improvement of the back-office and APIs for the LArgus application.',
+      'Integrate advanced features for vehicle valuation and user experience.',
+      'Optimize the platform for scalability to handle increasing user traffic.'
+    ],
+    reponses: [
+      'Development of a robust platform for vehicle valuation and automotive news.',
+      'Creation of an intuitive and user-friendly interface for buyers and sellers.',
+      'Implementation of real-time data feeds for up-to-date vehicle pricing and market trends.',
+      'Enhancing SEO strategies to improve visibility and organic traffic.'
+    ],
+    resultats: [
+      '120% increase in user engagement over 6 months.',
+      'Significant improvement in API response times by 40%.',
+      '150% growth in online vehicle listings within the first year.',
+      'Reduction in website loading time by 30%.',
+      'Achieved a 5% increase in conversion rates for premium listings.'
+    ]
+  },
+  {
+    id: 2,
+    name: 'Private Sport Shop',
+    images: [
+      'images/realisations/symfony/privatesport/privatesport-1.png',
+      'images/realisations/symfony/privatesport/privatesport-2.png',
+      'images/realisations/symfony/privatesport/privatesport-3.png'
+    ],
+    category: 'E-commerce',
+    size: 'medium',
+    client: 'Private Sport Shop',
+    techno: 'Symfony 4.4, PHP 7.4, MySQL, Docker, JavaScript, Elasticsearch',
+    objectifs: [
+      'Enhance the e-commerce platform for better performance and user experience.',
+      'Implement advanced search functionalities for improved product discovery.',
+      'Integrate real-time inventory management to streamline operations.',
+      'Develop a mobile-responsive design to cater to a wider audience.'
+    ],
+    reponses: [
+      'Development of a scalable e-commerce platform tailored for sporting goods.',
+      'Implementation of a robust search engine for efficient product filtering and sorting.',
+      'Integration of a user-friendly admin panel for inventory and order management.',
+      'Creation of a seamless checkout process to enhance customer satisfaction.'
+    ],
+    resultats: [
+      '150% increase in site traffic within 6 months of launch.',
+      '30% improvement in conversion rates due to enhanced user experience.',
+      'Significant reduction in cart abandonment rates by 20%.',
+      'Achieved a 50% growth in online sales over the first year.'
     ]
   }
+
+
 ];
 
 const ProjectCard = ({ project, onClick }) => {
@@ -312,7 +298,7 @@ const ProjectPopup = ({ project, onClose }) => {
   );
 };
 
-const DrupalRealisations = () => {
+const SymfonyRealisations = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleProjectClick = (project) => {
@@ -325,43 +311,72 @@ const DrupalRealisations = () => {
 
   return (
     <section className="w-full mx-auto px-4 max-w-c-1390 mt-40 my-10">
-      <div className="w-full mx-auto px-4 max-w-c-1390 mt-40 my-10 flex flex-col md:flex-row">
-        <div className="flex-1 pr-8 mb-8 md:mb-0">
-          <h2 className="text-sm uppercase mb-4">Un Aperçu de Nos</h2>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-12">
-            <span
-              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-              Drupal Réalisations
-            </span>
+      <div className="w-full mx-auto  max-w-c-1390 mt-40 my-10 flex flex-col md:flex-row">
+        <div className="w-full md:flex-1 md:pr-8 mb-8 md:mb-0">
+          <h2 className="text-sm uppercase mb-4">Un Aperçu de Notre</h2>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
+          <span
+            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+            Expertise Symfony
+          </span>
           </h1>
-          <p className="text-gray-600 mb-4 w-full">
-            Notre équipe Drupal est composée de membres qui détiennent
+          <p className="text-gray-600 mb-4">
+            Notre équipe est composée d'experts <span
+            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+            certifiés Symfony
+          </span>, reconnus par &nbsp;
             <span
               className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
-              certifications professionnelles en Drupal.
-            </span>
+          SensioLabs
+          </span>
+            &nbsp;avec plus de 10 ans d'expérience sur Symfony, de la version 2 à Symfony 7++.
           </p>
-          <p>
-            Choisir notre équipe pour vos projets et missions Drupal est la meilleure décision pour garantir des
-            résultats de qualité.
+          <p className="text-gray-600 mb-4">
+            Choisir notre équipe pour vos projets Symfony, c'est garantir un niveau d'expertise inégalé et des résultats
+            de qualité.
+          </p>
+          <p className="text-gray-600">
+          <span
+            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+            SensioLabs
+          </span> le créateur de Symfony, est également notre partenaire, renforçant ainsi notre expertise et notre
+                  capacité à offrir des solutions robustes et innovantes.
           </p>
         </div>
-        <div className="flex-1 flex justify-center items-center">
-          <div className="flex space-x-4">
-            {/* Certification Section*/}
+        <div className="flex flex-col space-y-6">
+          <div>
+            <p className="text-sm">Nos</p>
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black">
+          <span
+            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+            Certifications
+          </span>
+            </h1>
+          </div>
+          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 justify-center">
+            <img
+              src="images/certifications/symfony/symfony-6.png"
+              className="w-full sm:w-auto max-w-[300px] max-h-[200px] object-contain"
+              alt="Symfony 6 Certification"
+            />
+            <img
+              src="images/certifications/symfony/symfony-7.png"
+              className="w-full sm:w-auto max-w-[300px] max-h-[200px] object-contain"
+              alt="Symfony 7 Certification"
+            />
           </div>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto">
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} onClick={handleProjectClick} />
+          <ProjectCard key={project.id} project={project} onClick={handleProjectClick}/>
         ))}
       </div>
 
-      {selectedProject && <ProjectPopup project={selectedProject} onClose={handleClosePopup} />}
+      {selectedProject && <ProjectPopup project={selectedProject} onClose={handleClosePopup}/>}
     </section>
   );
 };
 
-export default DrupalRealisations;
+export default SymfonyRealisations;
