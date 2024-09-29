@@ -310,64 +310,14 @@ const SymfonyRealisations = () => {
   };
 
   return (
-    <section className="w-full mx-auto px-4 max-w-c-1390 mt-40 my-10">
-      <div className="w-full mx-auto  max-w-c-1390 mt-40 my-10 flex flex-col md:flex-row">
-        <div className="w-full md:flex-1 md:pr-8 mb-8 md:mb-0">
-          <h2 className="text-sm uppercase mb-4">Un Aperçu de Notre</h2>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
-          <span
-            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-            Expertise Symfony
-          </span>
-          </h1>
-          <p className="text-gray-600 mb-4">
-            Notre équipe est composée d'experts <span
-            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
-            certifiés Symfony
-          </span>, reconnus par &nbsp;
-            <span
-              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
-          SensioLabs
-          </span>
-            &nbsp;avec plus de 10 ans d'expérience sur Symfony, de la version 2 à Symfony 7++.
-          </p>
-          <p className="text-gray-600 mb-4">
-            Choisir notre équipe pour vos projets Symfony, c'est garantir un niveau d'expertise inégalé et des résultats
-            de qualité.
-          </p>
-          <p className="text-gray-600">
-          <span
-            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
-            SensioLabs
-          </span> le créateur de Symfony, est également notre partenaire, renforçant ainsi notre expertise et notre
-                  capacité à offrir des solutions robustes et innovantes.
-          </p>
-        </div>
-        <div className="flex flex-col space-y-6">
-          <div>
-            <p className="text-sm">Nos</p>
-            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black">
-          <span
-            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-            Certifications
-          </span>
-            </h1>
-          </div>
-          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 justify-center">
-            <img
-              src="images/certifications/symfony/symfony-6.png"
-              className="w-full sm:w-auto max-w-[300px] max-h-[200px] object-contain"
-              alt="Symfony 6 Certification"
-            />
-            <img
-              src="images/certifications/symfony/symfony-7.png"
-              className="w-full sm:w-auto max-w-[300px] max-h-[200px] object-contain"
-              alt="Symfony 7 Certification"
-            />
-          </div>
-        </div>
-      </div>
-
+    <section className="w-full mx-auto px-4 max-w-c-1390 mt-20 my-10">
+      <h2 className="text-sm uppercase mb-4">Un Aperçu de Notre</h2>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
+        <span
+          className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+          Projets Symfony
+        </span>
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} onClick={handleProjectClick}/>

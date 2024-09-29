@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
-import DrupalRealisations from "../../Components/Realisation/DrupalRealisations";
 import FAQs from "../../Components/FAQs/FAQs";
 import CTA from "../../Components/CTA/CTA";
-import SymfonyRealisations from "../../Components/Realisation/SymfonyRealisations";
 import PimcoreRealisations from "../../Components/Realisation/PimcoreRealisations";
 
 function SymfonyRealisationsPage() {
@@ -67,6 +65,75 @@ function SymfonyRealisationsPage() {
         toggleNavigation={toggleNavigation}
       />
       <PimcoreRealisations/>
+      <div className="w-full mx-auto px-4 max-w-c-1390 mt-5 my-10">
+
+      </div>
+      <div className="w-full mx-auto px-4 max-w-c-1390 mt-5 my-10">
+        <h2 className="text-sm uppercase mb-4">QUELLES APPLICATIONS</h2>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
+          <span
+            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+            CRÉONS-NOUS ?
+          </span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black">
+      <span
+        className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+        Solutions CMS et
+      </span>
+            </h1>
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black mb-5">
+      <span
+        className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+        e-Commerce
+      </span>
+            </h1>
+            <p className="text-gray-600">
+              Nous créons des systèmes de gestion de contenu (CMS) et des plateformes e-commerce performantes,
+              permettant aux entreprises de gérer leur contenu web, leurs ventes en ligne, paiements sécurisés, et
+              gestion des stocks. Développées avec Symfony, nos solutions sont flexibles, évolutives et parfaitement
+              intégrées à vos outils métiers.
+            </p>
+          </div>
+
+          <div>
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black">
+      <span
+        className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+        Outils de gestion des
+      </span>
+            </h1>
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black mb-5">
+      <span
+        className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+        données clients
+      </span>
+            </h1>
+            <p className="text-gray-600">
+              Un logiciel permettant la gestion efficace des données clients, facilitant le suivi des interactions,
+              l'analyse des performances et l'optimisation des relations clients, développé pour répondre aux
+              exigences des entreprises modernes.
+            </p>
+          </div>
+
+          <div>
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black mb-5">
+      <span
+        className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+        Solutions personnalisées
+      </span>
+            </h1>
+            <p className="text-gray-600">
+              Avec Pimcore, nous développons des solutions personnalisées adaptées aux besoins spécifiques de votre
+              entreprise, qu'il s'agisse d'applications internes, de gestion de projet, ou de plateformes de
+              collaboration. Nos solutions sont conçues pour s'intégrer parfaitement à votre environnement
+              existant tout en offrant une flexibilité maximale.
+            </p>
+          </div>
+        </div>
+      </div>
       <FAQs faqs={faqs}/>
       <CTA
         linkTo="/contact"

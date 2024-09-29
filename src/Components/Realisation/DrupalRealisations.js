@@ -324,42 +324,21 @@ const DrupalRealisations = () => {
   };
 
   return (
-    <section className="w-full mx-auto px-4 max-w-c-1390 mt-40 my-10">
-      <div className="w-full mx-auto px-4 max-w-c-1390 mt-40 my-10 flex flex-col md:flex-row">
-        <div className="flex-1 pr-8 mb-8 md:mb-0">
-          <h2 className="text-sm uppercase mb-4">Un Aperçu de Nos</h2>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-12">
-            <span
-              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-              Drupal Réalisations
-            </span>
-          </h1>
-          <p className="text-gray-600 mb-4 w-full">
-            Notre équipe Drupal est composée de membres qui détiennent
-            <span
-              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
-              certifications professionnelles en Drupal.
-            </span>
-          </p>
-          <p>
-            Choisir notre équipe pour vos projets et missions Drupal est la meilleure décision pour garantir des
-            résultats de qualité.
-          </p>
-        </div>
-        <div className="flex-1 flex justify-center items-center">
-          <div className="flex space-x-4">
-            {/* Certification Section*/}
-          </div>
-        </div>
-      </div>
-
+    <section className="w-full mx-auto px-4 max-w-c-1390  my-10">
+      <h2 className="text-sm uppercase mb-4">Un Aperçu de Notre</h2>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
+        <span
+          className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+          Projets Drupal
+        </span>
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto">
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} onClick={handleProjectClick} />
+          <ProjectCard key={project.id} project={project} onClick={handleProjectClick}/>
         ))}
       </div>
 
-      {selectedProject && <ProjectPopup project={selectedProject} onClose={handleClosePopup} />}
+      {selectedProject && <ProjectPopup project={selectedProject} onClose={handleClosePopup}/>}
     </section>
   );
 };
