@@ -5,7 +5,7 @@ import FAQs from "../../Components/FAQs/FAQs";
 import CTA from "../../Components/CTA/CTA";
 import PimcoreRealisations from "../../Components/Realisation/PimcoreRealisations";
 
-function SymfonyRealisationsPage() {
+function PimcoreRealisationsPage() {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [navigationOpen, setNavigationOpen] = useState(false);
 
@@ -65,9 +65,6 @@ function SymfonyRealisationsPage() {
         toggleNavigation={toggleNavigation}
       />
       <PimcoreRealisations/>
-      <div className="w-full mx-auto px-4 max-w-c-1390 mt-5 my-10">
-
-      </div>
       <div className="w-full mx-auto px-4 max-w-c-1390 mt-5 my-10">
         <h2 className="text-sm uppercase mb-4">QUELLES APPLICATIONS</h2>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
@@ -145,4 +142,4 @@ function SymfonyRealisationsPage() {
   );
 }
 
-export default SymfonyRealisationsPage;
+export default PimcoreRealisationsPage;

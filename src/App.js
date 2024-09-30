@@ -8,6 +8,7 @@ import CandidatureSpontaneePage from "./Pages/CandidatureSpontaneePage/Candidatu
 import DrupalRealisationsPage from "./Pages/RealisationsPage/DrupalRealisationsPage";
 import SymfonyRealisationsPage from "./Pages/RealisationsPage/SymfonyRealisationsPage";
 import PimcoreRealisationsPage from "./Pages/RealisationsPage/PimcoreRealisationsPage";
+import PrestashopRealisationsPage from "./Pages/RealisationsPage/PrestashopRealisationsPage";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/drupal-realisations" element={<DrupalRealisationsPage/>} />
             <Route path="/symfony-realisations" element={<SymfonyRealisationsPage/>} />
             <Route path="/pimcore-realisations" element={<PimcoreRealisationsPage/>} />
+            <Route path="/prestashop-realisations" element={<PrestashopRealisationsPage/>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>
