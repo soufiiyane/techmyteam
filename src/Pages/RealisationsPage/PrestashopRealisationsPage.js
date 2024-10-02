@@ -11,8 +11,8 @@ const ProjectCard = ({ title, description, imageUrl, linkText }) => (
     <img src={imageUrl} alt={title} className="w-full h-48 object-cover rounded-md mb-4" />
     <h3 className="text-2xl font-bold mb-2">{title}</h3>
     <p className="text-gray-700 mb-4">{description}</p>
-    <a href="#" className="text-blue-600 flex items-center">
-      {linkText} <ArrowRight className="ml-2" size={16} />
+    <a href={linkText} className="text-blue-600 flex items-center">
+      View Online  <ArrowRight className="ml-2" size={16} />
     </a>
   </div>
 );
@@ -21,7 +21,6 @@ const Testimonial = ({ quote, author, role, avatarUrl }) => (
   <div className="bg-gray-100 p-6 rounded-lg shadow-md">
     <p className="text-lg mb-4">"{quote}"</p>
     <div className="flex items-center">
-      <img src={avatarUrl} alt={author} className="w-12 h-12 rounded-full mr-4" />
       <div>
         <p className="font-bold">{author}</p>
         <p className="text-gray-600">{role}</p>
@@ -93,29 +92,28 @@ function PrestashopRealisationsPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mx-auto px-4 max-w-c-1390  my-10">
         <div>
           <Testimonial
-            quote="We've seen steady growth in online sales and a significant increase in mobile conversions since launch."
-            author="John Smith"
-            role="E-commerce Director"
-            avatarUrl="/api/placeholder/50/50"
+            quote="Depuis le lancement de notre nouvelle plateforme, nous avons observé une forte augmentation des ventes et un engagement client accru."
+            author="Jane Doe"
+            role="Fondatrice & PDG, Flowers for Zoe"
           />
           <ProjectCard
-            title="NKD E-commerce"
-            description="1800 branches in one online store"
-            imageUrl="/api/placeholder/400/300"
-            linkText="View Online"
+            title="Flowers for Zoe"
+            description="Plateforme en ligne pour une maison française spécialisée dans la bijouterie et les accessoires."
+            imageUrl="images/realisations/prestashop/ffz/ffz.png"
+            linkText="https://www.flowersforzoe.fr/"
           />
         </div>
         <div>
           <ProjectCard
-            title="NKD E-commerce"
-            description="1800 branches in one online store"
-            imageUrl="/api/placeholder/400/300"
-            linkText="View Online"
+            title="Acadia Solutions Informatiques"
+            description="Un distributeur leader de produits IT et technologiques, offrant une large gamme de composants, périphériques, et solutions réseau."
+            imageUrl="images/realisations/prestashop/acadia/acadia.png"
+            linkText="https://www.acadia-info.com/"
           />
           <Testimonial
-            quote="We've seen steady growth in online sales and a significant increase in mobile conversions since launch."
-            author="John Smith"
-            role="E-commerce Director"
+            quote="Acadia nous a fourni des produits technologiques fiables et abordables, améliorant considérablement notre infrastructure informatique."
+            author="Jane Doe"
+            role="Responsable Informatique"
             avatarUrl="/api/placeholder/50/50"
           />
         </div>
