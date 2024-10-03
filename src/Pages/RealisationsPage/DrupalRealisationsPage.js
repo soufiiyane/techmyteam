@@ -3,7 +3,6 @@ import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import DrupalRealisations from "../../Components/Realisation/DrupalRealisations";
 import FAQs from "../../Components/FAQs/FAQs";
-import News from "../../Components/News/News";
 import CTA from "../../Components/CTA/CTA";
 
 function DrupalRealisationsPage() {

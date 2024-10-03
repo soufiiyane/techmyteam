@@ -9,6 +9,7 @@ import DrupalRealisationsPage from "./Pages/RealisationsPage/DrupalRealisationsP
 import SymfonyRealisationsPage from "./Pages/RealisationsPage/SymfonyRealisationsPage";
 import PimcoreRealisationsPage from "./Pages/RealisationsPage/PimcoreRealisationsPage";
 import PrestashopRealisationsPage from "./Pages/RealisationsPage/PrestashopRealisationsPage";
+import WordpressRealisationsPage from "./Pages/RealisationsPage/WordpressRealisationsPage";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/symfony-realisations" element={<SymfonyRealisationsPage/>} />
             <Route path="/pimcore-realisations" element={<PimcoreRealisationsPage/>} />
             <Route path="/prestashop-realisations" element={<PrestashopRealisationsPage/>} />
+            <Route path="/wordpress-realisations" element={<WordpressRealisationsPage/>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>
