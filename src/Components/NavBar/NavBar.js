@@ -1,103 +1,284 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { NavLink } from "react-router-dom";
+import { Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  FaWordpress,
+  FaSymfony,
+  FaReact,
+  FaAngular,
+  FaApple,
+  FaAndroid,
+  FaAws,
+  FaDocker,
+  FaDrupal
+} from 'react-icons/fa';
+import { SiPrestashop, SiPimcore, SiMicrosoftazure, SiKubernetes, SiJenkins, SiGitlab, SiGithubactions } from 'react-icons/si';
+import { TbBrandReactNative } from 'react-icons/tb';
+import { BsFillEnvelopeFill } from 'react-icons/bs';
+import { AiOutlineCloudServer } from 'react-icons/ai';
 
-function NavBar({
-                  isDark,
-                  toggleDarkMode,
-                  stickyMenu,
-                  navigationOpen,
-                  toggleNavigation,
-                }) {
+const iconSize = 30;
+
+const iconColors = {
+  'Drupal Solutions': '#0678BE',
+  'PrestaShop Solutions': '#DF0067',
+  'WordPress Solutions': '#21759B',
+  'Symfony': '#000000',
+  'PimCore': '#6428B4',
+  'React': '#61DAFB',
+  'Angular': '#DD0031',
+  'Mailing': '#EA4335',
+  'Web Integration': '#4285F4',
+  'iOS': '#000000',
+  'Android': '#3DDC84',
+  'React Native': '#61DAFB',
+  'AWS': '#FF9900',
+  'Azure': '#0089D6',
+  'Machine Learning': '#4285F4',
+  'Deep Learning': '#0F9D58',
+  'Natural Language Processing': '#DB4437',
+  'Docker': '#2496ED',
+  'Kubernetes': '#326CE5',
+  'Apache Kafka': '#231F20',
+  'Jenkins': '#D24939',
+  'GitLab CI': '#FCA121',
+  'GitHub Actions': '#2088FF',
+};
+
+const technologies = {
+  'CMS et e-Commerce': [
+    { name: 'Drupal Solutions', icon: <FaDrupal size={iconSize} color={iconColors['Drupal Solutions']} />, path: '/drupal' },
+    { name: 'PrestaShop Solutions', icon: <SiPrestashop size={iconSize} color={iconColors['PrestaShop Solutions']} />, path: '/prestashop' },
+    { name: 'WordPress Solutions', icon: <FaWordpress size={iconSize} color={iconColors['WordPress Solutions']} />, path: '/wordpress' },
+  ],
+  'Développements spécifiques': [
+    { name: 'Symfony', icon: <FaSymfony size={iconSize} color={iconColors['Symfony']} />, path: '/symfony' },
+    { name: 'PimCore', icon: <SiPimcore size={iconSize} color={iconColors['PimCore']} />, path: '/pimcore' }
+  ],
+  'Framework': [
+    { name: 'React', icon: <FaReact size={iconSize} color={iconColors['React']} />, path: '/react' },
+    { name: 'Angular', icon: <FaAngular size={iconSize} color={iconColors['Angular']} />, path: '/angular' }
+  ],
+  'Integration': [
+    { name: 'Mailing', icon: <BsFillEnvelopeFill size={iconSize} color={iconColors['Mailing']} />, path: '/mailing' },
+    { name: 'Web Integration', icon: <AiOutlineCloudServer size={iconSize} color={iconColors['Web Integration']} />, path: '/web-integration' }
+  ],
+  'Mobile': [
+    { name: 'iOS', icon: <FaApple size={iconSize} color={iconColors['iOS']} />, path: '/ios' },
+    { name: 'Android', icon: <FaAndroid size={iconSize} color={iconColors['Android']} />, path: '/android' },
+    { name: 'React Native', icon: <TbBrandReactNative size={iconSize} color={iconColors['React Native']} />, path: '/react-native' },
+  ],
+  'Cloud': [
+    { name: 'AWS', icon: <FaAws size={iconSize} color={iconColors['AWS']} />, path: '/aws' },
+    { name: 'Azure', icon: <SiMicrosoftazure size={iconSize} color={iconColors['Azure']} />, path: '/azure' },
+  ],
+  'Artificial Intelligence': [
+    { name: 'Machine Learning', icon: <AiOutlineCloudServer size={iconSize} color={iconColors['Machine Learning']} />, path: '/machine-learning' },
+    { name: 'Deep Learning', icon: <AiOutlineCloudServer size={iconSize} color={iconColors['Deep Learning']} />, path: '/deep-learning' },
+    { name: 'Natural Language Processing', icon: <AiOutlineCloudServer size={iconSize} color={iconColors['Natural Language Processing']} />, path: '/nlp' },
+  ],
+  'Microservices': [
+    { name: 'Docker', icon: <FaDocker size={iconSize} color={iconColors['Docker']} />, path: '/docker' },
+    { name: 'Kubernetes', icon: <SiKubernetes size={iconSize} color={iconColors['Kubernetes']} />, path: '/kubernetes' },
+  ],
+  'CI/CD': [
+    { name: 'Jenkins', icon: <SiJenkins size={iconSize} color={iconColors['Jenkins']} />, path: '/jenkins' },
+    { name: 'GitLab CI', icon: <SiGitlab size={iconSize} color={iconColors['GitLab CI']} />, path: '/gitlab-ci' },
+    { name: 'GitHub Actions', icon: <SiGithubactions size={iconSize} color={iconColors['GitHub Actions']} />, path: '/github-actions' },
+  ],
+};
+
+function NavBar({ stickyMenu }) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('CMS et e-Commerce');
+  const [expandedCategories, setExpandedCategories] = useState({
+    'CMS et e-Commerce': true
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+    setMegaMenuOpen(false);
+  };
+
+  const toggleMegaMenu = () => {
+    setMegaMenuOpen(!megaMenuOpen);
+    if (!megaMenuOpen) {
+      setSelectedCategory('CMS et e-Commerce');
+      setExpandedCategories({ 'CMS et e-Commerce': true });
+    }
+  };
+
+  const toggleCategory = (category) => {
+    setExpandedCategories(prev => ({
+      ...prev,
+      [category]: !prev[category]
+    }));
+  };
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+    setMobileMenuOpen(false);
   };
 
   return (
-    <div>
-      <div className="fixed top-0 left-0 -z-10 flex h-full w-full items-center justify-around">
-        <span className="w-[1px] h-full bg-stroke dark:bg-strokedark flex animate-line1"></span>
-        <span className="w-[1px] h-full bg-stroke dark:bg-strokedark flex animate-line2"></span>
-        <span className="w-[1px] h-full bg-stroke dark:bg-strokedark flex animate-line3"></span>
+    <header className={`fixed left-0 top-0 w-full z-50 py-4 z-[99999] transition-all bg-white dark:bg-gray-900 duration-300 ${
+      stickyMenu ? "shadow-md" : ""
+    }`}>
+      <div className="container mx-auto max-w-c-1390 px-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <div className="text-4xl font-bold mr-2 text-yellow-400">{'{'}</div>
+            <div>
+              <h1 className="text-3xl sm:text-3xl md:text-xl font-black">
+                <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+                  Tech My Team
+                </span>
+              </h1>
+              <div className="text-sm text-black dark:text-white">Skills for digital business</div>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            <NavLink to="/" className="hover:text-primary transition-colors">Accueil</NavLink>
+            <NavLink to="/services" className="hover:text-primary transition-colors">Services</NavLink>
+            <NavLink to="/carriere" className="hover:text-primary transition-colors">Carrière</NavLink>
+            <button
+              onClick={toggleMegaMenu}
+              className="hover:text-primary focus:outline-none transition-colors flex items-center"
+            >
+              Technologies {megaMenuOpen ? <ChevronUp className="ml-1" /> : <ChevronDown className="ml-1" />}
+            </button>
+            <button
+              onClick={() => scrollToSection('support')}
+              className="hover:text-primary transition-colors"
+            >
+              Contact
+            </button>
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden focus:outline-none"
+            onClick={toggleMobileMenu}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        <nav className={`lg:hidden mt-4 pb-4 ${mobileMenuOpen ? 'block' : 'hidden'}`}>
+          <NavLink to="/" className="block py-2 hover:text-primary transition-colors">Accueil</NavLink>
+          <NavLink to="/services" className="block py-2 hover:text-primary transition-colors">Services</NavLink>
+          <NavLink to="/carriere" className="block py-2 hover:text-primary transition-colors">Carrière</NavLink>
+          <button
+            onClick={toggleMegaMenu}
+            className="w-full text-left py-2 hover:text-primary focus:outline-none transition-colors flex items-center justify-between"
+            aria-expanded={megaMenuOpen}
+          >
+            Technologies {megaMenuOpen ? <ChevronUp /> : <ChevronDown />}
+          </button>
+          {megaMenuOpen && (
+            <div className="pl-4 mt-2">
+              {Object.keys(technologies).map((category) => (
+                <div key={category} className="mb-2">
+                  <button
+                    onClick={() => toggleCategory(category)}
+                    className="w-full text-left py-1 flex items-center justify-between"
+                    aria-expanded={expandedCategories[category]}
+                  >
+                    {category} {expandedCategories[category] ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                  </button>
+                  {expandedCategories[category] && (
+                    <ul className="pl-4 mt-1 space-y-1">
+                      {technologies[category].map((tech) => (
+                        <li key={tech.name} className="flex items-center py-1">
+                          <NavLink to={tech.path} className="flex items-center hover:text-primary transition-colors">
+                            <span className="mr-2">{tech.icon}</span>
+                            {tech.name}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+          <button
+            onClick={() => {
+              scrollToSection('support');
+              setMobileMenuOpen(false);
+            }}
+            className="block w-full text-left py-2 hover:text-primary transition-colors"
+          >
+            Contact
+          </button>
+        </nav>
       </div>
-      <header
-        className={`fixed left-0 top-0 w-full z-[99999] py-7 ${
-          stickyMenu ? "bg-white dark:bg-black shadow py-4 transition duration-100" : ""
-        }`}
-      >
-        <div className="mx-auto max-w-[1390px] px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
-          <div className="w-full lg:w-1/4 flex items-center justify-between">
-            <div className="flex items-center">
-              <div className="text-4xl font-bold mr-2" style={{color: '#FCDE70'}}>{'{'}</div>
-              <div>
-                <h1 className="text-3xl sm:text-3xl md:text-xl font-black">
-               <span
-              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-              Tech My Team
-              </span>
-                </h1>
-                <div className="text-sm" style={{color: '#000'}}>Skills for digital business</div>
+
+      {/* Desktop Mega Menu */}
+      {megaMenuOpen && !mobileMenuOpen && (
+        <div className="hidden lg:block absolute left-0 w-full bg-white dark:bg-gray-800 shadow-lg mt-4">
+          <div className="container mx-auto px-4 py-6">
+            <div className="flex">
+              <div className="w-2/3 pr-4">
+                <div className="flex">
+                  <div className="w-1/3 border-r pr-4">
+                    <ul className="space-y-2">
+                      {Object.keys(technologies).map((category) => (
+                        <li
+                          key={category}
+                          className={`cursor-pointer ${selectedCategory === category ? 'text-primary font-semibold' : ''}`}
+                          onClick={() => setSelectedCategory(category)}
+                        >
+                          {category}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="w-2/3 pl-4">
+                    <h3 className="text-lg font-semibold mb-4">{selectedCategory}</h3>
+                    <ul className="space-y-2">
+                      {technologies[selectedCategory] && technologies[selectedCategory].map((tech) => (
+                        <li key={tech.name} className="flex items-center">
+                          <NavLink to={tech.path} className="flex items-center hover:text-primary transition-colors">
+                            <span className="mr-2">{tech.icon}</span>
+                            {tech.name}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="w-1/3 pl-2">
+                <img
+                  src="images/technologies.png"
+                  alt="Tech My Team Banner"
+                  className="w-full max-h-80 object-cover rounded-lg border-2 border-indigo-600"
+                />
               </div>
             </div>
-
-            <button className="lg:hidden block" onClick={toggleNavigation}>
-              <span className="block relative cursor-pointer w-5.5 h-5.5">
-                {/* Hamburger Lines */}
-                <span className="block absolute w-full h-full">
-                  {/* First Line */}
-                  <span
-                    className={`block relative top-0 left-0 bg-black dark:bg-white rounded-sm w-full h-0.5 my-1 transition-transform duration-300 ${
-                      navigationOpen ? "rotate-45 translate-y-1.5" : ""
-                    }`}
-                  ></span>
-                  {/* Second Line */}
-                  <span
-                    className={`block relative top-0 left-0 bg-black dark:bg-white rounded-sm w-full h-0.5 my-1 transition-opacity duration-300 ${
-                      navigationOpen ? "opacity-0" : ""
-                    }`}
-                  ></span>
-                  {/* Third Line */}
-                  <span
-                    className={`block relative top-0 left-0 bg-black dark:bg-white rounded-sm w-full h-0.5 my-1 transition-transform duration-300 ${
-                      navigationOpen ? "-rotate-45 -translate-y-1.5" : ""
-                    }`}
-                  ></span>
-                </span>
-              </span>
-            </button>
-          </div>
-
-          <div
-            className={`w-full lg:w-3/4 lg:h-auto lg:visible lg:flex items-center justify-between ${
-              navigationOpen
-                ? "visible bg-white dark:bg-black shadow-solid-5 h-auto max-h-[400px] overflow-y-auto rounded-md mt-4 p-7.5"
-                : "hidden lg:flex"
-            }`}
-          >
-            <nav>
-              <ul className="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10">
-                <li><NavLink to="/">Accueil</NavLink></li>
-                <li><NavLink to="/services">Services</NavLink></li>
-                <li><NavLink to="/carriere">Carrière</NavLink></li>
-                <li>
-                  <a
-                    href="#support"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('support');
-                    }}
-                    className="hover:text-primary">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </div>
-      </header>
-    </div>
+      )}
+    </header>
   );
 }
 

@@ -27,11 +27,11 @@ function App() {
             <Route path="/carriere" element={<CareersPage/>} />
             <Route path="/services" element={<ServicesPage/>} />
             <Route path="/carriere/candidature-spontanee" element={<CandidatureSpontaneePage/>} />
-            <Route path="/drupal-realisations" element={<DrupalRealisationsPage/>} />
-            <Route path="/symfony-realisations" element={<SymfonyRealisationsPage/>} />
-            <Route path="/pimcore-realisations" element={<PimcoreRealisationsPage/>} />
-            <Route path="/prestashop-realisations" element={<PrestashopRealisationsPage/>} />
-            <Route path="/wordpress-realisations" element={<WordpressRealisationsPage/>} />
+            <Route path="/drupal" element={<DrupalRealisationsPage/>} />
+            <Route path="/symfony" element={<SymfonyRealisationsPage/>} />
+            <Route path="/pimcore" element={<PimcoreRealisationsPage/>} />
+            <Route path="/prestashop" element={<PrestashopRealisationsPage/>} />
+            <Route path="/wordpress" element={<WordpressRealisationsPage/>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>
