@@ -3,7 +3,7 @@ import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import FAQs from "../../Components/FAQs/FAQs";
 import CTA from "../../Components/CTA/CTA";
-import PrestashopRealisations from "../../Components/Realisation/PrestashopRealisations";
+import Prestashop from "../../Components/Technologies/Prestashop";
 import { ArrowRight } from 'lucide-react';
 
 const ProjectCard = ({ title, description, imageUrl, linkText }) => (
@@ -29,7 +29,7 @@ const Testimonial = ({ quote, author, role, avatarUrl }) => (
   </div>
 );
 
-function WordpressRealisationsPage() {
+function PrestashopTechnologiePage() {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [navigationOpen, setNavigationOpen] = useState(false);
 
@@ -88,7 +88,7 @@ function WordpressRealisationsPage() {
         navigationOpen={navigationOpen}
         toggleNavigation={toggleNavigation}
       />
-      <PrestashopRealisations/>
+      <Prestashop/>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mx-auto px-4 max-w-c-1390  my-10">
         <div>
           <Testimonial
@@ -129,4 +129,4 @@ function WordpressRealisationsPage() {
   );
 }
 
-export default WordpressRealisationsPage;
+export default PrestashopTechnologiePage;

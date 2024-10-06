@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
-import DrupalRealisations from "../../Components/Realisation/DrupalRealisations";
+import Drupal from "../../Components/Technologies/Drupal";
 import FAQs from "../../Components/FAQs/FAQs";
 import CTA from "../../Components/CTA/CTA";
 
-function DrupalRealisationsPage() {
+function DrupalTechnologiePage() {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [navigationOpen, setNavigationOpen] = useState(false);
 
@@ -159,7 +159,7 @@ function DrupalRealisationsPage() {
           </div>
         </div>
       </div>
-      <DrupalRealisations/>
+      <Drupal/>
       <FAQs faqs={faqs}/>
       <CTA
         linkTo="/contact"
@@ -171,4 +171,4 @@ function DrupalRealisationsPage() {
   );
 }
 
-export default DrupalRealisationsPage;
+export default DrupalTechnologiePage;

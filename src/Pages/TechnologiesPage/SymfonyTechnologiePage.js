@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
-import DrupalRealisations from "../../Components/Realisation/DrupalRealisations";
+import Drupal from "../../Components/Technologies/Drupal";
 import FAQs from "../../Components/FAQs/FAQs";
 import CTA from "../../Components/CTA/CTA";
-import SymfonyRealisations from "../../Components/Realisation/SymfonyRealisations";
+import Symfony from "../../Components/Technologies/Symfony";
 
-function SymfonyRealisationsPage() {
+function SymfonyTechnologiePage() {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [navigationOpen, setNavigationOpen] = useState(false);
 
@@ -175,7 +175,7 @@ function SymfonyRealisationsPage() {
           </div>
         </div>
       </div>
-      <SymfonyRealisations/>
+      <Symfony/>
       <FAQs faqs={faqs}/>
       <CTA
         linkTo="/contact"
@@ -187,4 +187,4 @@ function SymfonyRealisationsPage() {
   );
 }
 
-export default SymfonyRealisationsPage;
+export default SymfonyTechnologiePage;

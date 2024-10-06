@@ -5,144 +5,100 @@ import { useSwipeable } from 'react-swipeable';
 const projects = [
   {
     "id": 1,
-    "name": "DESTINATION COCKTAILS",
+    "name": "GRAND-MERCREDI",
     "images": [
-      "images/realisations/drupal/cocktails/cocktails-1.png",
-      "images/realisations/drupal/cocktails/cocktails-2.png",
-      "images/realisations/drupal/cocktails/cocktails-3.png"
+      "images/realisations/wordpress/grandmercredi/grandmercredi-1.png",
+      "images/realisations/wordpress/grandmercredi/grandmercredi-2.png",
+      "images/realisations/wordpress/grandmercredi/grandmercredi-3.png"
     ],
-    "category": "Food & Beverage",
+    "category": "Media & Content",
     "size": "large",
-    "client": "DESTINATION COCKTAILS",
-    "techno": "Drupal, Acquia Lift, IOS, Android, Elastic",
+    "client": "GRAND-MERCREDI",
+    "techno": "WordPress, Google Analytics, SEO Tools, Facebook Ads",
     "objectifs": [
-      "Digitaliser la marque et construire une stratégie d'acquisition.",
-      "Déployer le positionnement accompagnateur de la marque.",
-      "Faire naviguer les consommateurs dans la gamme.",
-      "Optimiser l'expérience utilisateur sur tous les canaux digitaux.",
-      "Augmenter la visibilité en ligne et le trafic vers le site web.",
-      "Améliorer la conversion et la fidélisation des clients."
+      "Renforcer la présence numérique et créer une plateforme dédiée aux Grands-Parents.",
+      "Déployer un blog dynamique avec des articles engageants sur les thématiques familiales et intergénérationnelles.",
+      "Améliorer la visibilité de Grand-Mercredi via des stratégies SEO et une présence accrue dans l'actualité digitale.",
+      "Développer une section 'Actualités' riche en contenu pour captiver les lecteurs réguliers.",
+      "Optimiser l'expérience utilisateur pour encourager la fidélisation des visiteurs et augmenter les abonnés aux newsletters."
     ],
     "reponses": [
-      "Construction de la plateforme digitale.",
-      "Développement d'un plan d'acquisition multi-leviers : web native, mobile et social.",
-      "Création du plan d'activation CRM.",
-      "Innovation Drive to Store.",
-      "Mise en place d'une stratégie de contenu engageante.",
-      "Optimisation SEO pour améliorer le classement dans les moteurs de recherche.",
-      "Intégration de fonctionnalités de commerce électronique.",
-      "Développement d'une application mobile complémentaire."
+      "Conception et développement d'une plateforme conviviale pour la gestion de blogs et actualités.",
+      "Mise en place d'un back-office permettant à l'équipe de publier facilement des articles et du contenu multimédia.",
+      "Optimisation SEO pour accroître la visibilité des articles sur les moteurs de recherche.",
+      "Mise en place d'une stratégie de contenu engageante pour booster l'engagement des lecteurs.",
+      "Création d'une fonctionnalité de newsletter pour convertir les lecteurs en abonnés réguliers."
     ],
     "resultats": [
-      "Augmentation de 150% du trafic organique en 6 mois.",
-      "Amélioration du taux de conversion de 3% à 5.5%.",
-      "Croissance de 200% des ventes en ligne sur 12 mois.",
-      "Réduction de 25% du taux de rebond.",
-      "Augmentation de 40% du panier moyen."
+      "Augmentation de 150% du trafic organique vers le blog en 6 mois.",
+      "Taux d'engagement des articles en hausse de 40% grâce à des partages sur les réseaux sociaux.",
+      "Création d'une communauté fidèle avec une augmentation de 25% des abonnés à la newsletter.",
+      "Réduction du taux de rebond de 18% sur les pages d'actualités.",
+      "Augmentation de 60% du temps passé sur le site par utilisateur en raison d'un contenu plus interactif et engageant."
     ]
   },
   {
     id: 1,
-    name: 'PRÉVOIR',
+    name: 'Aimant Aidant',
     images: [
-      'images/realisations/drupal/prevoir/prevoir-1.png',
-      'images/realisations/drupal/prevoir/prevoir-2.png',
-      'images/realisations/drupal/prevoir/prevoir-3.png'
+      'images/realisations/wordpress/aimantaidant/aimantaidant-2.png',
+      'images/realisations/wordpress/aimantaidant/aimantaidant-3.png',
+      'images/realisations/wordpress/aimantaidant/aimantaidant-1.png'
     ],
-    category: 'Insurance',
-    size: 'small',
-    client: 'PRÉVOIR',
-    techno: 'Drupal, Acquia Lift, Elastic',
-    objectifs: [
-      'Lead a full-scale digital transformation for PRÉVOIR, a prominent insurance group.',
-      'Rebuild the digital ecosystem to enhance multichannel commercial conversion.',
-      'Improve customer relations and satisfaction through personalized user experiences.',
-      'Drive qualified traffic to the website and increase user engagement.'
-    ],
-    reponses: [
-      'Development of a fully integrated digital platform for PRÉVOIR.',
-      'Design and deployment of a multichannel acquisition strategy (web, mobile, social).',
-      'Creation of an engaging CRM activation plan.',
-      'Implementation of an innovative Drive-to-Store strategy.',
-      'SEO optimization to boost organic search rankings.',
-      'Integration of e-commerce features and development of a complementary mobile app.'
-    ],
-    resultats: [
-      '150% increase in organic traffic within 6 months.',
-      'Improved conversion rate from 3% to 5.5%.',
-      '200% growth in online sales over 12 months.',
-      '25% reduction in bounce rate.',
-      '40% increase in average basket size.'
-    ]
-  },
-  {
-    id: 1,
-    name: 'DEPAZ',
-    images: [
-      'images/realisations/drupal/depaz/depaz-1.png',
-      'images/realisations/drupal/depaz/depaz-2.png',
-      'images/realisations/drupal/depaz/depaz-3.png'
-    ],
-    category: 'Beverages',
-    size: 'small',
-    client: 'DEPAZ',
-    techno: 'PHP,Drupal, JavaScript',
-    objectifs: [
-      'Lead the digital transformation of Depaz.',
-      'Establish and expand the brand’s digital presence on an international scale.',
-      'Strengthen the brand’s high-end, expert positioning in the market.',
-      'Drive qualified traffic to the website.'
-    ],
-    reponses: [
-      'Development of a comprehensive full-service platform.',
-      'Creation of an intuitive, engaging, and immersive digital experience.',
-      'Client-focused platform, contextualized to enhance user interaction.',
-      'Highlighting the brand’s heritage and story.'
-    ],
-    resultats: [
-      '150% increase in organic traffic within 6 months.',
-      'Improved conversion rate from 3% to 5.5%.',
-      '200% growth in online sales over 12 months.',
-      '25% reduction in bounce rate.',
-      '40% increase in average basket size.'
-    ]
-  },
-  {
-    id: 1,
-    name: 'MAISON MONTFORT',
-    images: [
-      'images/realisations/drupal/montfort/montfort-1.png',
-      'images/realisations/drupal/montfort/montfort-2.png',
-      'images/realisations/drupal/montfort/montfort-3.png'
-    ],
-    category: 'Food & Beverage',
+    category: 'Santé',
     size: 'medium',
-    client: 'MAISON MONTFORT',
-    techno: 'Drupal, Lift, IOS, Android, Javascript, Ibeacon',
+    client: 'Aimant Aidant',
+    techno: 'WordPress, Google Analytics, Outils SEO, Facebook Ads, PHP, JavaScript',
     objectifs: [
-      'Transformation Digitale.',
-      'Digitaliser la marque et construire une stratégie d’acquisition.',
-      'Déployer le positionnement accompagnateur de la marque.',
-      'Faire naviguer les consommateurs dans la gamme.',
-      'Augmenter la visibilité en ligne et le trafic vers le site web.',
-      'Améliorer la conversion et la fidélisation des clients.'
+      'Créer une plateforme numérique de soutien pour les aidants familiaux.',
+      'Améliorer l\'engagement des utilisateurs grâce à une navigation intuitive et à des ressources accessibles.',
+      'Favoriser un sentiment de communauté entre les aidants et leurs proches.',
+      'Fournir des outils et des ressources qui encouragent la stimulation mentale et le bien-être des personnes âgées.'
     ],
     reponses: [
-      'Construction de la plateforme digitale.',
-      'Développement d\'un plan d’acquisition multi-leviers : web native, mobile et social.',
-      'Création du plan d’activation CRM.',
-      'Innovation Drive to Store.',
-      'Mise en place d\'une stratégie de contenu engageante.',
-      'Optimisation SEO pour améliorer le classement dans les moteurs de recherche.',
-      'Intégration de fonctionnalités de commerce électronique.',
-      'Développement d’une application mobile complémentaire.'
+      'Développement d’un site web convivial adapté aux aidants et aux seniors.',
+      'Intégration d\'outils interactifs et de ressources pour améliorer l\'expérience utilisateur.',
+      'Création de contenu informatif abordant les défis courants des aidants.',
+      'Mise en œuvre d’une fonctionnalité de newsletter pour tenir les utilisateurs informés et engagés.',
+      'Optimisation SEO pour améliorer la visibilité et atteindre les publics cibles.'
     ],
     resultats: [
-      'Augmentation de 150% du trafic organique en 6 mois.',
-      'Amélioration du taux de conversion de 3% à 5.5%.',
-      'Croissance de 200% des ventes en ligne sur 12 mois.',
-      'Réduction de 25% du taux de rebond.',
-      'Augmentation de 40% du panier moyen.'
+      'Augmentation significative des inscriptions d’utilisateurs et des abonnements à la newsletter.',
+      'Amélioration des indicateurs d\'engagement des utilisateurs, y compris le temps passé sur le site et le nombre de pages vues.',
+      'Retours positifs des aidants concernant l\'accessibilité des ressources et le soutien fourni.',
+      'Amélioration du trafic et de la visibilité du site grâce à des efforts SEO ciblés.'
+    ]
+  },
+  {
+    id: 1,
+    name: 'PartAge',
+    images: [
+      'images/realisations/wordpress/partage/partage-1.png',
+      'images/realisations/wordpress/partage/partage-2.png',
+      'images/realisations/wordpress/partage/partage-3.png'
+    ],
+    category: 'Santé',
+    size: 'medium',
+    client: 'PartAge',
+    techno: 'PHP, WordPress, JavaScript',
+    objectifs: [
+      'Diriger la transformation numérique de PartAge.',
+      'Établir et développer la présence numérique de la marque à l’échelle internationale.',
+      'Renforcer le positionnement haut de gamme et expert de la marque sur le marché.',
+      'Générer du trafic qualifié vers le site web.'
+    ],
+    reponses: [
+      'Développement d’une plateforme complète et multifonctionnelle.',
+      'Création d’une expérience numérique intuitive, engageante et immersive.',
+      'Plateforme centrée sur le client, contextualisée pour améliorer l’interaction utilisateur.',
+      'Mise en valeur de l’héritage et de l’histoire de la marque.'
+    ],
+    resultats: [
+      'Augmentation de 150 % du trafic organique en 6 mois.',
+      'Amélioration du taux de conversion de 3 % à 5,5 %. ',
+      'Croissance de 200 % des ventes en ligne sur 12 mois.',
+      'Réduction de 25 % du taux de rebond.',
+      'Augmentation de 40 % de la taille moyenne du panier.'
     ]
   }
 ];
@@ -312,7 +268,7 @@ const ProjectPopup = ({ project, onClose }) => {
   );
 };
 
-const DrupalRealisations = () => {
+const Wordpress = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleProjectClick = (project) => {
@@ -329,7 +285,7 @@ const DrupalRealisations = () => {
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
         <span
           className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-          Projets Drupal
+          Projets Wordpress
         </span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto">
@@ -343,4 +299,4 @@ const DrupalRealisations = () => {
   );
 };
 
-export default DrupalRealisations;
+export default Wordpress;

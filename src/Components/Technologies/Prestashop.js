@@ -3,133 +3,6 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useSwipeable } from 'react-swipeable';
 
 const projects = [
-  {
-    "id": 1,
-    "name": "MYM",
-    "images": [
-      "images/realisations/symfony/mym/mym-1.png",
-      "images/realisations/symfony/mym/mym-2.png",
-      "images/realisations/symfony/mym/mym-3.png"
-    ],
-    "category": "Social Networking",
-    "size": "medium",
-    "client": "MYM",
-    "techno": "Symfony 5.4, PHP 8.1, ApiPlatform 2.6, PostgreSQL, Mercure, Amazon SQS messenger, AWS S3...",
-    "objectifs": [
-      "Digitaliser la plateforme pour une interaction créateur-fan unique.",
-      "Construire une stratégie de contenu engageant et personnalisé.",
-      "Optimiser l'expérience utilisateur pour maximiser l'engagement.",
-      "Accroître la visibilité des créateurs et de leurs contenus exclusifs.",
-      "Faciliter l'acquisition de nouveaux fans et l'augmentation de l'interaction."
-    ],
-    "reponses": [
-      "Développement de la plateforme sociale pour les créateurs et fans.",
-      "Mise en place d'une stratégie de contenu adaptée aux utilisateurs.",
-      "Intégration de fonctionnalités de monétisation pour les créateurs.",
-      "Optimisation des performances pour un accès rapide et fluide.",
-      "Amélioration des outils de communication entre créateurs et fans."
-    ],
-    "resultats": [
-      "Augmentation significative de l'engagement des utilisateurs.",
-      "Croissance du nombre de créateurs et de fans sur la plateforme.",
-      "Amélioration des taux de conversion pour les contenus payants.",
-      "Renforcement de la communauté autour des créateurs."
-    ]
-  },
-  {
-    id: 1,
-    name: 'Touristra Vacances',
-    images: [
-      'images/realisations/symfony/touristra/touristra-1.png',
-      'images/realisations/symfony/touristra/touristra-2.png',
-      'images/realisations/symfony/touristra/touristra-3.png'
-    ],
-    category: 'Travel',
-    size: 'medium',
-    client: 'Touristra Vacances',
-    techno: 'Symfony 4.4, PHP 7.1, Symfony 3.4, FOSRestBundle, MySQL, PostgreSQL, OpenApi, Expo push notifications...',
-    objectifs: [
-      '[OEA] Création de Back Office multi site',
-      '[OEA] Gestion et génération des documents',
-      '[AMFE] Création de Back Office et API',
-      '[Touristra] Ajout de fonctionnalités manquantes'
-    ],
-    reponses: [
-      'Développement d’un Back Office multi-site permettant la gestion centralisée de plusieurs villages de vacances.',
-      'Mise en place d’un système de génération automatique de documents pour simplifier les processus administratifs.',
-      'Création d’API pour faciliter l’intégration avec d’autres systèmes de gestion.',
-      'Ajout de fonctionnalités manquantes pour améliorer l’expérience utilisateur sur le site web.'
-    ],
-    resultats: [
-      'Réduction de 30% du temps de gestion administrative grâce à l’automatisation des documents.',
-      'Amélioration de la satisfaction client de 20% après l’ajout de nouvelles fonctionnalités.',
-      'Augmentation de 40% du nombre de réservations en ligne dans les six mois suivant le lancement.',
-      'Réduction des coûts opérationnels de 25% grâce à une gestion centralisée et efficace.'
-    ]
-  },
-  {
-    id: 1,
-    name: 'Largus',
-    images: [
-      'images/realisations/symfony/largus/largus-1.png',
-      'images/realisations/symfony/largus/largus-2.png'
-    ],
-    category: 'Automotive',
-    size: 'medium',
-    client: 'Largus',
-    techno: 'PHP, Symfony, MySQL, Docker, JavaScript',
-    objectifs: [
-      'Migration from Symfony 2.5 to Symfony 3.4 to enhance application performance and security.',
-      'Maintenance and improvement of the back-office and APIs for the LArgus application.',
-      'Integrate advanced features for vehicle valuation and user experience.',
-      'Optimize the platform for scalability to handle increasing user traffic.'
-    ],
-    reponses: [
-      'Development of a robust platform for vehicle valuation and automotive news.',
-      'Creation of an intuitive and user-friendly interface for buyers and sellers.',
-      'Implementation of real-time data feeds for up-to-date vehicle pricing and market trends.',
-      'Enhancing SEO strategies to improve visibility and organic traffic.'
-    ],
-    resultats: [
-      '120% increase in user engagement over 6 months.',
-      'Significant improvement in API response times by 40%.',
-      '150% growth in online vehicle listings within the first year.',
-      'Reduction in website loading time by 30%.',
-      'Achieved a 5% increase in conversion rates for premium listings.'
-    ]
-  },
-  {
-    id: 2,
-    name: 'Private Sport Shop',
-    images: [
-      'images/realisations/symfony/privatesport/privatesport-1.png',
-      'images/realisations/symfony/privatesport/privatesport-2.png',
-      'images/realisations/symfony/privatesport/privatesport-3.png'
-    ],
-    category: 'E-commerce',
-    size: 'medium',
-    client: 'Private Sport Shop',
-    techno: 'Symfony 4.4, PHP 7.4, MySQL, Docker, JavaScript, Elasticsearch',
-    objectifs: [
-      'Enhance the e-commerce platform for better performance and user experience.',
-      'Implement advanced search functionalities for improved product discovery.',
-      'Integrate real-time inventory management to streamline operations.',
-      'Develop a mobile-responsive design to cater to a wider audience.'
-    ],
-    reponses: [
-      'Development of a scalable e-commerce platform tailored for sporting goods.',
-      'Implementation of a robust search engine for efficient product filtering and sorting.',
-      'Integration of a user-friendly admin panel for inventory and order management.',
-      'Creation of a seamless checkout process to enhance customer satisfaction.'
-    ],
-    resultats: [
-      '150% increase in site traffic within 6 months of launch.',
-      '30% improvement in conversion rates due to enhanced user experience.',
-      'Significant reduction in cart abandonment rates by 20%.',
-      'Achieved a 50% growth in online sales over the first year.'
-    ]
-  }
-
 
 ];
 
@@ -298,7 +171,7 @@ const ProjectPopup = ({ project, onClose }) => {
   );
 };
 
-const SymfonyRealisations = () => {
+const Prestashop = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleProjectClick = (project) => {
@@ -310,14 +183,78 @@ const SymfonyRealisations = () => {
   };
 
   return (
-    <section className="w-full mx-auto px-4 max-w-c-1390 mt-20 my-10">
-      <h2 className="text-sm uppercase mb-4">Un Aperçu de Notre</h2>
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
-        <span
-          className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-          Projets Symfony
-        </span>
-      </h1>
+    <section className="w-full mx-auto px-4 max-w-c-1390 mt-40 my-10">
+      <div className="w-full mx-auto max-w-c-1390 mt-40 my-10 flex flex-col md:flex-row">
+        <div className="w-full md:w-3/5 md:pr-8 mb-8 md:mb-0">
+          <h2 className="text-sm uppercase mb-4">Un Aperçu de Notre</h2>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
+      <span
+        className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+        Expertise PrestaShop
+      </span>
+          </h1>
+          <p className="text-gray-600 mb-4 text-justify">
+            Notre équipe PrestaShop est composée de membres passionnés ayant plus de&nbsp;
+            <span
+              className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
+        6 ans d'expérience dans le domaine.
+      </span>
+            &nbsp;Cette expertise leur permet de maîtriser les subtilités de la plateforme et d'apporter des solutions
+            adaptées aux besoins de nos clients. Ils s'engagent à suivre les meilleures pratiques de l'industrie, en
+            assurant
+            une formation continue et une veille technologique constante. Grâce à leur expérience, notre équipe est
+            toujours à
+            jour avec les dernières avancées de PrestaShop, ce qui nous permet de vous offrir des solutions innovantes
+            et
+            performantes.
+          </p>
+          <p className="text-gray-600 mb-4 text-justify">
+            Choisir notre équipe pour vos projets et missions PrestaShop est la meilleure décision pour garantir des
+            résultats
+            de qualité. Que vous ayez besoin de développer un site web sur mesure, d'optimiser une plateforme existante
+            ou
+            d'assurer la maintenance de votre infrastructure, notre expertise vous assure des solutions robustes et
+            performantes qui répondent parfaitement à vos besoins spécifiques.
+          </p>
+        </div>
+
+        <div className="w-full md:w-2/5 flex flex-col space-y-6">
+          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 justify-center">
+            <div className="w-full">
+              <h2 className="text-sm uppercase mb-4">POURQUOI CHOISIR</h2>
+              <h1 className="text-3xl font-black mb-12">
+          <span
+            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+            PrestaShop
+          </span>
+              </h1>
+              <p className="text-gray-600 text-justify">
+                PrestaShop est une solution open source de gestion de boutique en ligne, reconnue pour sa flexibilité,
+                sa
+                simplicité d’utilisation et son large éventail de fonctionnalités. Voici quelques raisons pour
+                lesquelles
+                choisir PrestaShop pour votre projet e-commerce
+              </p>
+              <div className="flex flex-wrap mt-5 gap-4 text-center">
+                <div className="bg-gray-100 border border-indigo-600 shadow-md py-10 rounded w-[150px]">
+                  <div className="text-3xl font-bold text-blue-600">300K+</div>
+                  <div className="text-sm text-gray-500">boutiques en ligne</div>
+                </div>
+                <div className="bg-gray-100 border border-indigo-600 shadow-md py-10 rounded w-[150px]">
+                  <div className="text-3xl font-bold text-blue-600">>75</div>
+                  <div className="text-sm text-gray-500">langues supportées</div>
+                </div>
+                <div className="bg-gray-100 border border-indigo-600 shadow-md py-10 rounded w-[150px]">
+                  <div className="text-3xl font-bold text-blue-600">+5000</div>
+                  <div className="text-sm text-gray-500">modules et thèmes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} onClick={handleProjectClick}/>
@@ -329,4 +266,4 @@ const SymfonyRealisations = () => {
   );
 };
 
-export default SymfonyRealisations;
+export default Prestashop;

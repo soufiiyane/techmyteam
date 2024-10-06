@@ -4,15 +4,12 @@ import { Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
 import {
   FaWordpress,
   FaSymfony,
-  FaReact,
-  FaAngular,
   FaApple,
   FaAndroid,
   FaAws,
-  FaDocker,
   FaDrupal
 } from 'react-icons/fa';
-import { SiPrestashop, SiPimcore, SiMicrosoftazure, SiKubernetes, SiJenkins, SiGitlab, SiGithubactions } from 'react-icons/si';
+import { SiPrestashop, SiPimcore } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { AiOutlineCloudServer } from 'react-icons/ai';
@@ -55,37 +52,22 @@ const technologies = {
     { name: 'Symfony', icon: <FaSymfony size={iconSize} color={iconColors['Symfony']} />, path: '/symfony' },
     { name: 'PimCore', icon: <SiPimcore size={iconSize} color={iconColors['PimCore']} />, path: '/pimcore' }
   ],
-  'Framework': [
-    { name: 'React', icon: <FaReact size={iconSize} color={iconColors['React']} />, path: '/react' },
-    { name: 'Angular', icon: <FaAngular size={iconSize} color={iconColors['Angular']} />, path: '/angular' }
+  'Cloud': [
+    { name: 'AWS', icon: <FaAws size={iconSize} color={iconColors['AWS']} />, path: '/aws' }
   ],
   'Integration': [
-    { name: 'Mailing', icon: <BsFillEnvelopeFill size={iconSize} color={iconColors['Mailing']} />, path: '/mailing' },
-    { name: 'Web Integration', icon: <AiOutlineCloudServer size={iconSize} color={iconColors['Web Integration']} />, path: '/web-integration' }
+    { name: 'Web&Mailing', icon: <BsFillEnvelopeFill size={iconSize} color={iconColors['Mailing']} />, path: '/integration' },
   ],
   'Mobile': [
     { name: 'iOS', icon: <FaApple size={iconSize} color={iconColors['iOS']} />, path: '/ios' },
     { name: 'Android', icon: <FaAndroid size={iconSize} color={iconColors['Android']} />, path: '/android' },
     { name: 'React Native', icon: <TbBrandReactNative size={iconSize} color={iconColors['React Native']} />, path: '/react-native' },
   ],
-  'Cloud': [
-    { name: 'AWS', icon: <FaAws size={iconSize} color={iconColors['AWS']} />, path: '/aws' },
-    { name: 'Azure', icon: <SiMicrosoftazure size={iconSize} color={iconColors['Azure']} />, path: '/azure' },
-  ],
   'Artificial Intelligence': [
     { name: 'Machine Learning', icon: <AiOutlineCloudServer size={iconSize} color={iconColors['Machine Learning']} />, path: '/machine-learning' },
     { name: 'Deep Learning', icon: <AiOutlineCloudServer size={iconSize} color={iconColors['Deep Learning']} />, path: '/deep-learning' },
     { name: 'Natural Language Processing', icon: <AiOutlineCloudServer size={iconSize} color={iconColors['Natural Language Processing']} />, path: '/nlp' },
-  ],
-  'Microservices': [
-    { name: 'Docker', icon: <FaDocker size={iconSize} color={iconColors['Docker']} />, path: '/docker' },
-    { name: 'Kubernetes', icon: <SiKubernetes size={iconSize} color={iconColors['Kubernetes']} />, path: '/kubernetes' },
-  ],
-  'CI/CD': [
-    { name: 'Jenkins', icon: <SiJenkins size={iconSize} color={iconColors['Jenkins']} />, path: '/jenkins' },
-    { name: 'GitLab CI', icon: <SiGitlab size={iconSize} color={iconColors['GitLab CI']} />, path: '/gitlab-ci' },
-    { name: 'GitHub Actions', icon: <SiGithubactions size={iconSize} color={iconColors['GitHub Actions']} />, path: '/github-actions' },
-  ],
+  ]
 };
 
 function NavBar({ stickyMenu }) {
@@ -141,14 +123,15 @@ function NavBar({ stickyMenu }) {
       <div className="container mx-auto max-w-c-1390 px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <div className="text-4xl font-bold mr-2 text-yellow-400">{'{'}</div>
+            <div className="text-4xl font-bold mr-2" style={{color: '#FCDE70'}}>{'{'}</div>
             <div>
               <h1 className="text-3xl sm:text-3xl md:text-xl font-black">
-                <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
+               <span
+                 className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
                   Tech My Team
                 </span>
               </h1>
-              <div className="text-sm text-black dark:text-white">Skills for digital business</div>
+              <div className="text-sm" style={{color: '#000'}}>Skills for digital business</div>
             </div>
           </div>
 

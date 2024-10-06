@@ -3,9 +3,9 @@ import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import FAQs from "../../Components/FAQs/FAQs";
 import CTA from "../../Components/CTA/CTA";
-import PimcoreRealisations from "../../Components/Realisation/PimcoreRealisations";
+import Pimcore from "../../Components/Technologies/Pimcore";
 
-function PimcoreRealisationsPage() {
+function PimcoreTechnologiePage() {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [navigationOpen, setNavigationOpen] = useState(false);
 
@@ -64,7 +64,7 @@ function PimcoreRealisationsPage() {
         navigationOpen={navigationOpen}
         toggleNavigation={toggleNavigation}
       />
-      <PimcoreRealisations/>
+      <Pimcore/>
       <div className="w-full mx-auto px-4 max-w-c-1390 mt-5 my-10">
         <h2 className="text-sm uppercase mb-4">QUELLES APPLICATIONS</h2>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
@@ -142,4 +142,4 @@ function PimcoreRealisationsPage() {
   );
 }
 
-export default PimcoreRealisationsPage;
+export default PimcoreTechnologiePage;

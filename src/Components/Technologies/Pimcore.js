@@ -171,7 +171,7 @@ const ProjectPopup = ({ project, onClose }) => {
   );
 };
 
-const PimcoreRealisations = () => {
+const Pimcore = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleProjectClick = (project) => {
@@ -299,4 +299,4 @@ const PimcoreRealisations = () => {
   );
 };
 
-export default PimcoreRealisations;
+export default Pimcore;

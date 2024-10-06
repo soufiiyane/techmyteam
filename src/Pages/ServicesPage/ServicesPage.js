@@ -3,7 +3,6 @@ import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import Integrations from "../../Components/Integrations/Integrations";
 import ChooseUs from "../../Components/ChooseUs/ChooseUs";
-import Team from "../../Components/Team/Team";
 
 function ServicesPage() {
   const [stickyMenu, setStickyMenu] = useState(false);
