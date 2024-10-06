@@ -11,6 +11,7 @@ import PimcoreTechnologiePage from "./Pages/TechnologiesPage/PimcoreTechnologieP
 import PrestashopTechnologiePage from "./Pages/TechnologiesPage/PrestashopTechnologiePage";
 import WordpressRealisationsPage from "./Pages/TechnologiesPage/WordpressTechnologiePage";
 import AWSRealisationsPage from "./Pages/TechnologiesPage/AWSTechnologiePage";
+import ContactPage from "./Pages/ContactPage/ContactPage";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/carriere" element={<CareersPage/>} />
             <Route path="/services" element={<ServicesPage/>} />
+            <Route path="/contact" element={<ContactPage/>} />
             <Route path="/carriere/candidature-spontanee" element={<CandidatureSpontaneePage/>} />
             <Route path="/drupal" element={<DrupalTechnologiePage/>} />
             <Route path="/symfony" element={<SymfonyTechnologiePage/>} />

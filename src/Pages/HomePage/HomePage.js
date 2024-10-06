@@ -37,7 +37,6 @@ function HomePage() {
             <ChatBot/>
             <Features/>
             <About/>
-            <Contact/>
             <CallToAction/>
             <Footer/>
         </div>

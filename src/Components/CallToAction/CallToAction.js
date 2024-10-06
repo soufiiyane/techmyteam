@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -22,22 +23,10 @@ const CallToAction = () => {
                 alt="Innovation"
                 className="hidden xl:block"
               />
-              <a
-                href="consultation.html"
-                className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6"
-              >
-                Consultation
-                <img
-                  src="./images/icon/icon-arrow-dark.svg"
-                  alt="Flèche"
-                  className="dark:hidden"
-                />
-                <img
-                  src="./images/icon/icon-arrow-light.svg"
-                  alt="Flèche"
-                  className="hidden dark:block"
-                />
-              </a>
+              <NavLink to="/contact"
+                       className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6">
+                Consultation ->
+              </NavLink>
             </div>
           </div>
         </div>

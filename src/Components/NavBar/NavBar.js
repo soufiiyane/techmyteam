@@ -148,12 +148,7 @@ function NavBar({ stickyMenu }) {
             >
               Technologies {megaMenuOpen ? <ChevronUp className="ml-1" /> : <ChevronDown className="ml-1" />}
             </button>
-            <button
-              onClick={() => scrollToSection('support')}
-              className="hover:text-primary transition-colors"
-            >
-              Contact
-            </button>
+            <NavLink to="/contact" className="block py-2 hover:text-primary transition-colors">Contact</NavLink>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -205,15 +200,7 @@ function NavBar({ stickyMenu }) {
               ))}
             </div>
           )}
-          <button
-            onClick={() => {
-              scrollToSection('support');
-              setMobileMenuOpen(false);
-            }}
-            className="block w-full text-left py-2 hover:text-primary transition-colors"
-          >
-            Contact
-          </button>
+          <NavLink to="/contact" className="block py-2 hover:text-primary transition-colors">Contact</NavLink>
         </nav>
       </div>
 
