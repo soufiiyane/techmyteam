@@ -128,7 +128,7 @@ function NavBar({ stickyMenu }) {
               <h1 className="text-3xl sm:text-3xl md:text-xl font-black">
                <span
                  className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-                  Tech My Team
+                Tech My Team
                 </span>
               </h1>
               <div className="text-sm" style={{color: '#000'}}>Skills for digital business</div>
@@ -217,7 +217,7 @@ function NavBar({ stickyMenu }) {
 
       {/* Desktop Mega Menu */}
       {megaMenuOpen && !mobileMenuOpen && (
-        <div className="hidden lg:block absolute left-0 w-full bg-white dark:bg-gray-800 shadow-lg mt-4">
+        <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 shadow-lg mt-4" style={{ width: '80%', maxWidth: '1390px' }}>
           <div className="container mx-auto px-4 py-6">
             <div className="flex">
               <div className="w-2/3 pr-4">
