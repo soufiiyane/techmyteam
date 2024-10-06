@@ -215,46 +215,6 @@ const Pimcore = () => {
             notre
             partenariat avec PimCore, pour vous offrir des résultats de haute qualité adaptés à vos besoins spécifiques.
           </p>
-          <div className="w-full mx-auto  mt-8 max-w-c-1390 mt-40 my-10 flex flex-col md:flex-row">
-            <div className="w-full md:flex-1 md:pr-8 mb-5 md:mb-0">
-              <h2 className="text-sm uppercase mb-4">POURQUOI CHOISIR</h2>
-              <h1 className="text-3xl font-black mb-12 mb-5">
-              <span
-                className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-                PimCore
-              </span>
-              </h1>
-              <p className="text-gray-600  text-justify">
-                Pimcore est une plateforme de gestion de contenu et d'expérience digitale open source leader avec plus
-                de 10
-                ans d'expérience. De nombreux projets, sites web performants et applications d'entreprise, tels que ceux
-                de
-                grandes marques internationales, s'appuient sur cette plateforme flexible. De plus, Pimcore organise des
-                conférences, des formations et des certifications pour attirer un nombre croissant de développeurs dans
-                le
-                monde entier.
-              </p>
-              <div className="flex flex-wrap mt-5 gap-4 text-center">
-                <div className="bg-gray-100 border border-indigo-600 shadow-md py-10 rounded w-[150px]">
-                  <div className="text-3xl font-bold text-blue-600">10+</div>
-                  <div className="text-sm text-gray-500">ans d'expérience</div>
-                </div>
-                <div className="bg-gray-100 border border-indigo-600 shadow-md py-10 rounded w-[150px]">
-                  <div className="text-3xl font-bold text-blue-600">>200</div>
-                  <div className="text-sm text-gray-500">partenaires certifiés</div>
-                </div>
-                <div className="bg-gray-100 border border-indigo-600 shadow-md py-10 rounded w-[150px]">
-                  <div className="text-3xl font-bold text-blue-600">>100k</div>
-                  <div className="text-sm text-gray-500">téléchargements</div>
-                </div>
-                <div className="bg-gray-100 border border-indigo-600 shadow-md py-10 rounded w-[150px]">
-                  <div className="text-3xl font-bold text-blue-600">>80k</div>
-                  <div className="text-sm text-gray-500">installations actives</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
         <div className="flex flex-col space-y-6">
           <div>

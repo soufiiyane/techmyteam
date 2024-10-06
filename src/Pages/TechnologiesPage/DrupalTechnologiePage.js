@@ -84,26 +84,6 @@ function DrupalTechnologiePage() {
             robustes et performantes qui répondent parfaitement à vos besoins spécifiques.
           </p>
         </div>
-
-        <div className="flex flex-col space-y-6">
-          <div>
-            <p className="text-sm">Nos</p>
-            <h1 className="text-2xl sm:text-2xl md:text-3xl font-black">
-          <span
-            className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-            Certifications
-          </span>
-            </h1>
-          </div>
-          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 justify-center">
-            <img
-              src="images/certifications/drupal/Developer_Drupal 10.png"
-              className="w-full sm:w-auto max-w-[300px] max-h-[200px] object-contain"
-              alt="Symfony 6 Certification"
-            />
-
-          </div>
-        </div>
       </div>
       <div className="w-full mx-auto px-4 max-w-c-1390 mt-5 my-10">
         <h2 className="text-sm uppercase mb-4">QUELLES SOLUTIONS</h2>

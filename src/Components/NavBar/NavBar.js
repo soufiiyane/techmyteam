@@ -125,13 +125,15 @@ function NavBar({ stickyMenu }) {
           <div className="flex items-center">
             <div className="text-4xl font-bold mr-2" style={{color: '#FCDE70'}}>{'{'}</div>
             <div>
-              <h1 className="text-3xl sm:text-3xl md:text-xl font-black">
+              <NavLink to="/" className="block py-2 hover:text-secondary transition-colors"><h1
+                className="text-3xl sm:text-3xl md:text-xl font-black">
                <span
                  className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
                 Tech My Team
                 </span>
               </h1>
-              <div className="text-sm" style={{color: '#000'}}>Skills for digital business</div>
+                <div className="text-sm" style={{color: '#000'}}>Skills for digital business</div>
+              </NavLink>
             </div>
           </div>
 
