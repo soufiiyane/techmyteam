@@ -44,17 +44,17 @@ const Services = () => {
     {
       name: "Développements spécifiques",
       options: ["Symfony", "PimCore"],
-      paths: ["/symfony-realisations", "/pimcore-realisations"],
+      paths: ["/symfony", "/pimcore"],
     },
     {
       name: "CMS et e-Commerce",
       options: ["Drupal Solutions", "PrestaShop Solutions", "WordPress Solutions"],
-      paths: ["/drupal-realisations", "/prestashop-realisations", "/wordpress-realisations"],
+      paths: ["/drupal", "/prestashop", "/wordpress"],
     },
     {
       name: "Solutions mobiles",
       options: ["Android", "IOS"],
-      paths: ["/android-realisations", "/ios-realisations"],
+      paths: ["/android", "/ios"],
     },
     {
       name: "Integration",
