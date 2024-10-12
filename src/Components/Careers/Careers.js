@@ -2,28 +2,25 @@ import React, { useState, useMemo } from 'react';
 import { Search, MapPin, FileText, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const initialJobListings = [
-  { title: "Expert Technique PHP/ Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Ingenieur Concepteur Développeur Pimcore Confirmé/ Senior", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Expert technique Front End", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Frontend" },
-  { title: "Senior Cloud Developer", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud" },
-  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "QA" },
-  { title: "Expert Technique PHP/ Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Ingenieur Concepteur Développeur Pimcore Confirmé/ Senior", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Expert technique Front End", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Frontend" },
-  { title: "Senior Cloud Developer", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud" },
-  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "QA" },
-  { title: "Expert Technique PHP/ Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Ingenieur Concepteur Développeur Pimcore Confirmé/ Senior", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Expert technique Front End", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Frontend" },
-  { title: "Senior Cloud Developer", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud" },
-  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "QA" },
-  { title: "Expert Technique PHP/ Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Ingenieur Concepteur Développeur Pimcore Confirmé/ Senior", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Backend" },
-  { title: "Expert technique Front End", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Frontend" },
-  { title: "Senior Cloud Developer", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud" },
-  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "QA" },
-
+  { title: "Consultant Technique PHP/Symfony", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Développement Backend" },
+  { title: "Développeur/Architecte Senior Pimcore", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Développement Backend" },
+  { title: "Spécialiste en Développement Frontend", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Développement Frontend" },
+  { title: "Développeur Solutions Cloud Azure", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud Engineering" },
+  { title: "Ingénieur Test Fonctionnel", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Assurance Qualité" },
+  { title: "Développeur Solutions AWS", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Cloud Engineering" },
+  { title: "Ingénieur DevOps OCI", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "DevOps" },
+  { title: "Développeur Vue.js", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Développement Frontend" },
+  { title: "Architecte Cloud Multi-Plateforme", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Cloud Engineering" },
+  { title: "Consultant en Automatisation des Tests", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Assurance Qualité" },
+  { title: "Architecte Logiciel Java/Spring", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Développement Backend" },
+  { title: "Spécialiste en Microservices Kubernetes", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Cloud Engineering" },
+  { title: "Ingénieur Machine Learning", location: "Marrakech", country: "Maroc", type: "CDD", expertise: "Intelligence Artificielle" },
+  { title: "Développeur Back-End Node.js", location: "Marrakech", country: "Maroc", type: "Freelance", expertise: "Développement Backend" },
+  { title: "Ingénieur Systèmes et Réseaux", location: "Marrakech", country: "Maroc", type: "CDI", expertise: "Infrastructure" },
 ];
+
+
+
 
 const ITEMS_PER_PAGE = 10;
 
