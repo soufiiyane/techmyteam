@@ -74,7 +74,7 @@ const ChatBot = () => {
   };
 
   const postData = async (userInput, sessionId) => {
-    const url = 'https://rdml6ljdh5.execute-api.us-east-1.amazonaws.com/dev/';
+    const url = 'https://q1pupwqtya.execute-api.us-east-1.amazonaws.com/dev/';
     const data = {
       inputText: userInput,
       session_id: sessionId
