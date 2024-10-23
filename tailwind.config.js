@@ -24,7 +24,7 @@ module.exports = {
       meta: '#20C5A8',
       waterloo: '#757693',
       manatee: '#999AA1',
-      alabaster: '#FBFBFB',
+      alabaster: '#F5F5F5',
       zumthor: '#EDF5FF',
       socialicon: '#D1D8E0',
     },

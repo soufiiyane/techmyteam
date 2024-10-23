@@ -311,20 +311,7 @@ const Symfony = () => {
 
   return (
     <section className="w-full mx-auto px-4 max-w-c-1390 mt-20 my-10">
-      <h2 className="text-sm uppercase mb-4">Un Aperçu de Notre</h2>
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-12">
-        <span
-          className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
-          Projets Symfony
-        </span>
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} onClick={handleProjectClick}/>
-        ))}
-      </div>
 
-      {selectedProject && <ProjectPopup project={selectedProject} onClose={handleClosePopup}/>}
     </section>
   );
 };
